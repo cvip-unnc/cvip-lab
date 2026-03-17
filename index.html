@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CVIP Lab | Computer Vision and Intelligent Perception</title>
+    
+    <!-- 自动使用学校 Logo 作为浏览器标签页图标 (Favicon) -->
+    <link rel="icon" id="favicon-link" href="uni_log.jpg">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        light: { bg: '#f8fafc', card: '#ffffff', border: '#e2e8f0', text: '#1e293b' },
+                        dark: { bg: '#0a0e1a', card: 'rgba(17, 24, 39, 0.5)', border: 'rgba(100, 116, 139, 0.3)' }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- JS-YAML Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body { font-family: 'Inter', sans-serif; transition: background-color 0.3s ease, color 0.3s ease; }
+        .glass-nav { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); transition: background-color 0.3s ease, border-color 0.3s ease; }
+        .animated-gradient-text {
+            background: linear-gradient(90deg, #30f292, #00c4ff, #ff3b8d, #30f292);
+            background-size: 400% 400%;
+            -webkit-background-clip: text; background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradient-pan 10s ease infinite;
+        }
+        @keyframes gradient-pan { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+        .nav-link.active { color: #00c4ff; position: relative; font-weight: 600; }
+        .nav-link.active::after { content: ''; position: absolute; bottom: -6px; left: 50%; transform: translateX(-50%); width: 5px; height: 5px; border-radius: 50%; background-color: #00c4ff; }
+        .card-style { transition: all 0.3s ease; }
+        .dark .card-style:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0, 196, 255, 0.15); border-color: rgba(0, 196, 255, 0.4); }
+        html:not(.dark) .card-style:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); border-color: #cbd5e1; }
+        
+        /* --- 滚动条美化 --- */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; } /* 浅色模式下更明显的灰色 */
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+        
+        /* 深色模式下的滚动条颜色调整，确保在深色卡片上可见 */
+        .dark ::-webkit-scrollbar-thumb { background: #475569; } 
+        .dark ::-webkit-scrollbar-thumb:hover { background: #64748b; }
+
+        .swiper { width: 100%; aspect-ratio: 16 / 9; border-radius: 0.75rem; }
+        .swiper-slide img { width: 100%; height: 100%; object-fit: cover; }
+        .swiper-button-next, .swiper-button-prev { color: #00c4ff; opacity: 0; transition: opacity 0.2s ease; }
+        .swiper:hover .swiper-button-next, .swiper:hover .swiper-button-prev { opacity: 1; }
+        .swiper-pagination-bullet-active { background-color: #00c4ff !important; }
+        /* Lightbox模态框样式 */
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .lightbox.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .lightbox-img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        /* 深色模式适配 */
+        html.dark .lightbox {
+            background-color: rgba(10, 14, 26, 0.9);
+        }
+
+        .info-window-title {
+            font-family: PingFangSC-Medium;
+            font-size: 14px;
+            color: #3366FF;
+            letter-spacing: 0;
+            text-align: justify;
+            line-height: 22px;
+            font-weight: 500;
+            width: 256px;
+        }
+
+        .info-window-text {
+            display: block;
+            font-family: PingFangSC-Medium;
+            font-size: 12px;
+            color: #666666;
+            letter-spacing: 0;
+            text-align: justify;
+            line-height: 22px;
+            font-weight: 500;
+            word-wrap: break-word;
+            white-space: normal;
+            width: 256px;
+        }
+    </style>
+</head>
+<body class="antialiased bg-light-bg text-light-text dark:bg-dark-bg dark:text-gray-300">
+
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-nav bg-white/80 border-b border-gray-200 dark:bg-[#0a0e1a]/80 dark:border-gray-700/30">
+        <nav class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <span class="text-2xl font-extrabold text-gray-900 dark:text-white" id="nav-logo">CVIP Lab</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex md:ml-10 md:space-x-8" id="desktop-menu"></div>
+                
+                <!-- Right Side -->
+                <div class="flex items-center space-x-2">
+                    <button id="theme-toggle" class="p-2 rounded-md text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-700 transition-colors duration-200">
+                        <svg id="sun-icon" class="hidden h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                        <svg id="moon-icon" class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" /></svg>
+                    </button>
+                    <div class="md:hidden">
+                        <button id="mobile-menu-button" class="p-2 rounded-md text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-700 transition-colors duration-200">
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-b border-gray-200 dark:bg-[#0a0e1a] dark:border-gray-700 px-2 pt-2 pb-3 space-y-1 sm:px-3"></div>
+    </header>
+
+    <main class="pt-16">
+        
+        <!-- Hero Section -->
+        <section id="home" class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 min-h-[calc(100vh-16rem)] flex items-center justify-center text-center">
+            <div class="w-full">
+                <h1 class="text-4xl font-bold text-gray-900 dark:text-gray-300 sm:text-5xl md:text-6xl">
+                    <span id="hero-welcome"></span>
+                </h1>
+                <h2 class="mt-4 text-5xl font-extrabold sm:text-7xl md:text-8xl animated-gradient-text" id="hero-title"></h2>
+                <p class="mt-6 text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto" id="hero-subtitle"></p>
+                <div class="mt-12 flex flex-col sm:flex-row justify-center gap-4" id="hero-cta"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="max-w-4xl mx-auto py-24 px-4" id="about-section">
+            <div class="flex justify-center items-center gap-8 mb-10">
+                <div class="w-32 h-32 rounded-full bg-white dark:bg-gray-800 flex items-center justify-center shadow-lg border border-gray-100 dark:border-gray-700 p-2 overflow-hidden">
+                    <img id="uni-logo" src="" alt="University Logo" class="w-full h-full object-contain rounded-full opacity-90 hover:opacity-100">
+                </div>
+            </div>
+            <h2 class="text-4xl font-extrabold text-gray-900 dark:text-white sm:text-5xl text-center" id="about-title"></h2>
+            <div id="about-content" class="mt-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed space-y-4"></div>
+            
+            <div class="mt-16">
+                <h3 class="text-3xl font-bold text-gray-900 dark:text-white text-center mb-10" id="research-focus-title"></h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="research-focus-grid"></div>
+            </div>
+
+            <!-- Collaborators -->
+            <div class="mt-16">
+                 <h3 class="text-3xl font-bold text-gray-900 dark:text-white text-center mb-12" id="collab-title"></h3>
+                 <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-x-8 gap-y-4 items-center justify-items-center" id="collab-grid"></div>
+            </div>
+
+            <!-- Highlights Swiper -->
+            <div class="mt-16">
+                <h3 class="text-3xl font-bold text-gray-900 dark:text-white text-center mb-12" id="highlights-title"></h3>
+                <div class="swiper bg-gray-200 dark:bg-[#1e293b]">
+                    <div class="swiper-wrapper" id="swiper-wrapper"></div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <div id="swiper-caption" class="text-center text-gray-600 dark:text-gray-400 mt-4 text-lg italic min-h-[1.5em]"></div>
+            </div>
+        </section>
+
+        <!-- News Section (Updated with Scroll) -->
+        <section id="news" class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 min-h-screen bg-gray-50 dark:bg-transparent">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-extrabold text-gray-900 dark:text-white sm:text-5xl text-center mb-12" id="news-title"></h2>
+                
+                <!-- 新闻滚动容器 -->
+                <!-- 背景色、圆角、阴影，使其看起来像一个卡片 -->
+                <div class="relative bg-white dark:bg-gray-900/50 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-800 backdrop-blur-sm overflow-hidden">
+                    
+                    <!-- 滚动区域：max-h-[600px] 限制最大高度，超过则滚动 -->
+                    <div class="max-h-[600px] overflow-y-auto p-8 custom-scrollbar">
+                        <div class="flow-root">
+                            <ul role="list" class="-mb-8" id="news-list"></ul>
+                        </div>
+                    </div>
+
+                    <!-- 底部渐变遮罩 (可选，增加视觉美感) -->
+                    <!-- 这会给底部添加一个渐渐消失的效果，提示用户下面可能还有内容 -->
+                    <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white dark:from-black/20 to-transparent pointer-events-none rounded-b-2xl"></div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 min-h-screen">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-extrabold text-gray-900 dark:text-white sm:text-5xl text-center mb-16" id="team-title"></h2>
+                <div id="team-container"></div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 min-h-screen bg-gray-50 dark:bg-transparent">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-extrabold text-gray-900 dark:text-white sm:text-5xl text-center mb-16" id="projects-title"></h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10" id="projects-grid"></div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 min-h-screen">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-extrabold text-gray-900 dark:text-white sm:text-5xl text-center mb-16" id="pubs-title"></h2>
+                <div id="publications-container"></div>
+            </div>
+        </section>
+
+        <!-- Awards Section -->
+        <section id="awards" class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 min-h-screen bg-gray-50 dark:bg-transparent">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-extrabold text-gray-900 dark:text-white sm:text-5xl text-center mb-16" id="awards-title"></h2>
+                <div id="awards-container" class="space-y-6"></div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 min-h-screen bg-gray-50 dark:bg-transparent">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-4xl font-extrabold text-gray-900 dark:text-white sm:text-5xl" id="contact-title"></h2>
+                <p class="mt-6 text-lg text-gray-600 dark:text-gray-300 leading-relaxed" id="contact-desc"></p>
+                <div class="mt-16 text-left grid grid-cols-1 md:grid-cols-2 gap-10" id="contact-grid"></div>
+                <div id="map-container" class="mt-16 h-96 w-full rounded-lg bg-gray-200 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 flex items-center justify-center"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700/50">
+        <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 flex justify-between items-center flex-col sm:flex-row">
+            <div class="text-gray-500 dark:text-gray-400 text-sm" id="footer-text"></div>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script type="text/javascript" src="//api.map.baidu.com/api?v=3.0&ak=p624e7C6rl1L742b0Fk6d5nrZ5LnT0fU"></script>
+    <!-- Main Logic Script -->
+    <script>
+        // DOM Elements
+        const themeToggle = document.getElementById('theme-toggle');
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        // Theme Handling
+        function updateThemeIcons() {
+            const isDark = document.documentElement.classList.contains('dark');
+            document.getElementById('sun-icon').classList.toggle('hidden', !isDark);
+            document.getElementById('moon-icon').classList.toggle('hidden', isDark);
+        }
+        themeToggle.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            updateThemeIcons();
+        });
+        updateThemeIcons();
+
+        // Mobile Menu
+        mobileMenuButton.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+        // Helper: Safe Icon Renderer
+        // Allows using either <svg>...</svg> string OR 'images/icon.png' path in YAML
+        function renderIcon(content) {
+            if (!content) return '';
+            const trimmed = content.trim();
+            // If it starts with <svg, it's an SVG string
+            if (trimmed.startsWith('<svg')) return trimmed;
+            // If it ends with image extension, render as image
+            if (trimmed.match(/\.(jpeg|jpg|gif|png|webp|svg)$/i)) {
+                return `<img src="${trimmed}" class="h-6 w-6 object-contain" alt="icon">`;
+            }
+            // Fallback: return as text
+            return trimmed;
+        }
+
+        // DATA LOADING AND RENDERING ENGINE
+        async function loadContent() {
+            try {
+                const response = await fetch('data.yml');
+                if (!response.ok) throw new Error("Could not load data.yml. Please ensure you are running a local server (e.g., Live Server in VS Code).");
+                const yamlText = await response.text();
+                const data = jsyaml.load(yamlText);
+                
+                renderSite(data);
+                initSwiper();
+                initLightbox();
+                initMap();
+            } catch (e) {
+                console.error(e);
+                alert("Error loading content: " + e.message);
+            }
+        }
+
+        function renderSite(data) {
+            // Update Favicon if provided in YAML
+            if (data.about && data.about.university_logo) {
+               document.getElementById('favicon-link').href = data.about.university_logo;
+            }
+
+            // 1. Navigation
+            const navContainer = document.getElementById('desktop-menu');
+            const mobContainer = document.getElementById('mobile-menu');
+            document.getElementById('nav-logo').textContent = data.navbar.logo;
+            
+            data.navbar.links.forEach(link => {
+                const a = `<a href="${link.href}" class="nav-link text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors duration-200">${link.text}</a>`;
+                const mobA = `<a href="${link.href}" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:text-white dark:hover:bg-gray-700">${link.text}</a>`;
+                navContainer.insertAdjacentHTML('beforeend', a);
+                mobContainer.insertAdjacentHTML('beforeend', mobA);
+            });
+
+            // 2. Hero
+            document.getElementById('hero-welcome').textContent = data.home.welcome_text;
+            document.getElementById('hero-title').textContent = data.home.lab_name;
+            document.getElementById('hero-subtitle').textContent = data.home.subtitle;
+            data.home.buttons.forEach(btn => {
+                const cls = btn.primary 
+                    ? "text-white bg-cyan-600 hover:bg-cyan-500" 
+                    : "text-cyan-600 dark:text-cyan-300 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700";
+                const html = `<a href="${btn.href}" class="inline-block px-8 py-3 text-lg font-semibold rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 ${cls}">${btn.text}</a>`;
+                document.getElementById('hero-cta').insertAdjacentHTML('beforeend', html);
+            });
+
+            // 3. About
+            document.getElementById('uni-logo').src = data.about.university_logo;
+            document.getElementById('about-title').textContent = data.about.title;
+            data.about.paragraphs.forEach(p => {
+                document.getElementById('about-content').insertAdjacentHTML('beforeend', `<p>${p}</p>`);
+            });
+            
+            // Research Focus
+            document.getElementById('research-focus-title').textContent = data.about.research_focus_title;
+            data.about.research_areas.forEach(area => {
+                const html = `
+                <div class="card-style p-6 rounded-xl bg-white border border-gray-200 dark:bg-dark-card dark:border-dark-border">
+                    <div class="flex-shrink-0 mb-4">
+                        ${renderIcon(area.icon_svg)}
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-900 dark:text-white">${area.title}</h4>
+                    <p class="mt-2 text-gray-600 dark:text-gray-400">${area.description}</p>
+                </div>`;
+                document.getElementById('research-focus-grid').insertAdjacentHTML('beforeend', html);
+            });
+
+            // Collaborators
+            document.getElementById('collab-title').textContent = data.about.collaborators_title;
+            data.about.collaborators.forEach(src => {
+                const img = `<img src="${src}" alt="Collaborator" class="w-40 h-auto grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition-all duration-300">`;
+                document.getElementById('collab-grid').insertAdjacentHTML('beforeend', img);
+            });
+
+            // Highlights (Swiper)
+            document.getElementById('highlights-title').textContent = data.about.highlights_title;
+            const swiperWrapper = document.getElementById('swiper-wrapper');
+            data.about.highlights.forEach(slide => {
+                const html = `<div class="swiper-slide" data-caption="${slide.caption}"><img src="${slide.image}" alt="Highlight"></div>`;
+                swiperWrapper.insertAdjacentHTML('beforeend', html);
+            });
+
+            // 4. News
+            document.getElementById('news-title').textContent = data.news.title;
+            const newsList = document.getElementById('news-list');
+            data.news.items.forEach((item, index) => {
+                const isLast = index === data.news.items.length - 1;
+                const html = `
+                <li>
+                    <div class="relative pb-8">
+                        ${!isLast ? '<span class="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-300 dark:bg-gray-700" aria-hidden="true"></span>' : ''}
+                        <div class="relative flex space-x-3">
+                            <div>
+                                <span class="h-8 w-8 rounded-full bg-cyan-500 flex items-center justify-center ring-8 ring-white dark:ring-gray-900">
+                                    <svg class="h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="min-w-0 flex-1 pt-1.5 flex justify-between space-x-4">
+                                <div>
+                                    <p class="text-lg text-gray-900 dark:text-white">${item.content}</p>
+                                    <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">${item.date}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>`;
+                newsList.insertAdjacentHTML('beforeend', html);
+            });
+
+            // 5. Team
+            document.getElementById('team-title').textContent = data.team.title;
+            const teamContainer = document.getElementById('team-container');
+
+            // Render Director
+            const director = data.team.director;
+            if (director) {
+                const directorHtml = `
+                <h3 class="text-3xl font-bold text-cyan-600 dark:text-cyan-400 mb-8">${director.group_title}</h3>
+                <div class="flex flex-col md:flex-row items-start md:gap-10 mb-16">
+                    <div class="flex-shrink-0 md:w-1/3 w-full">
+                        <div class="card-style rounded-xl overflow-hidden text-center p-6 bg-white border border-gray-200 dark:bg-dark-card dark:border-dark-border">
+                            <img class="rounded-full h-40 w-40 mx-auto object-cover ring-4 ring-gray-100 dark:ring-gray-700" src="${director.image}" alt="${director.name}">
+                            <h4 class="mt-4 text-2xl font-semibold text-gray-900 dark:text-white">${director.name}</h4>
+                            <p class="text-cyan-600 dark:text-cyan-300 text-lg">${director.role}</p>
+                            <div class="mt-6 flex justify-center space-x-4">
+                                ${director.links.map(l => `<a href="${l.url}" class="p-2 bg-gray-100 dark:bg-gray-800 rounded-full hover:text-cyan-600 dark:hover:text-cyan-400">${renderIcon(l.icon_svg)}</a>`).join('')}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-1 md:w-2/3 mt-10 md:mt-0 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+                        <h4 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Biography</h4>
+                        ${director.bio_paragraphs.map(p => `<p class="mb-4">${p}</p>`).join('')}
+                    </div>
+                </div>`;
+                teamContainer.insertAdjacentHTML('beforeend', directorHtml);
+            }
+
+            // Render Groups
+            data.team.groups.forEach(group => {
+                const membersHtml = group.members.map(m => `
+                    <div class="card-style rounded-xl overflow-hidden text-center p-6 bg-white border border-gray-200 dark:bg-dark-card dark:border-dark-border">
+                        <img class="rounded-full h-32 w-32 mx-auto object-cover ring-2 ring-gray-100 dark:ring-gray-700" src="${m.image}" alt="${m.name}">
+                        <h4 class="mt-4 text-lg font-semibold text-gray-900 dark:text-white">${m.name}</h4>
+                        <p class="text-cyan-600 dark:text-cyan-300 text-sm">${m.role}</p>
+                        ${m.previous ? `<p class="text-xs text-gray-500 dark:text-gray-400 italic mt-1">${m.previous}</p>` : ''}
+                        ${m.joint ? `<p class="text-xs text-cyan-600 dark:text-cyan-400 font-medium mt-1">${m.joint}</p>` : ''}
+                        ${m.desc ? `<p class="mt-2 text-xs text-gray-500 dark:text-gray-400">${m.desc}</p>` : ''}
+                        <div class="mt-4 flex justify-center space-x-3">
+                             ${m.links ? m.links.map(l => `<a href="${l.url}" class="text-gray-400 hover:text-cyan-500">${renderIcon(l.icon_svg)}</a>`).join('') : ''}
+                        </div>
+                    </div>
+                `).join('');
+                
+                const groupSection = `
+                <h3 class="text-3xl font-bold text-cyan-600 dark:text-cyan-400 mb-8">${group.group_name}</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                    ${membersHtml}
+                </div>`;
+                teamContainer.insertAdjacentHTML('beforeend', groupSection);
+            });
+
+            // 6. Projects
+            document.getElementById('projects-title').textContent = data.projects.title;
+            data.projects.items.forEach(proj => {
+                const html = `
+                <div class="card-style rounded-xl overflow-hidden flex flex-col bg-white border border-gray-200 dark:bg-dark-card dark:border-dark-border">
+                    <img src="${proj.image}" alt="${proj.title}" class="w-full h-64 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-semibold text-gray-900 dark:text-white">${proj.title}</h3>
+                        <p class="mt-3 text-gray-600 dark:text-gray-400 flex-grow">${proj.description}</p>
+                        ${proj.collaborators ? `
+                        <div class="mt-4 pt-4 border-t border-gray-100 dark:border-gray-700/50">
+                            <span class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider">Collaborators</span>
+                            <div class="flex flex-wrap gap-3 mt-2 items-center">
+                                ${proj.collaborators.map(c => `<img src="${c}" class="h-8 w-auto grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all">`).join('')}
+                            </div>
+                        </div>` : ''}
+                        <div class="mt-6 flex gap-4">
+                            ${proj.links ? proj.links.map(l => `<a href="${l.url}" class="font-medium text-cyan-600 hover:text-cyan-500">${l.text}</a>`).join('') : ''}
+                        </div>
+                    </div>
+                </div>`;
+                document.getElementById('projects-grid').insertAdjacentHTML('beforeend', html);
+            });
+
+            // 7. Publications
+            document.getElementById('pubs-title').textContent = data.publications.title;
+            const pubsContainer = document.getElementById('publications-container');
+            
+            data.publications.categories.forEach(cat => {
+                let yearsHtml = '';
+                cat.years.forEach(yearGroup => {
+                    const papersHtml = yearGroup.papers.map(p => `
+                        <li class="p-6 rounded-lg card-style bg-white border border-gray-200 dark:bg-dark-card dark:border-dark-border">
+                            <p class="text-lg font-semibold text-gray-900 dark:text-white">${p.title}</p>
+                            <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">${p.authors}</p>
+                            <p class="text-sm text-gray-500 dark:text-gray-300 italic mt-1">${p.venue}</p>
+                            <div class="mt-3 flex gap-4">
+                                ${p.links ? p.links.map(l => `<a href="${l.url}" class="font-medium text-cyan-600 hover:text-cyan-500">${l.text}</a>`).join('') : ''}
+                            </div>
+                        </li>
+                    `).join('');
+                    
+                    yearsHtml += `
+                        <h4 class="text-2xl font-bold text-gray-700 dark:text-gray-300 mb-4">${yearGroup.year}</h4>
+                        <ul class="space-y-6 mb-12">${papersHtml}</ul>
+                    `;
+                });
+
+                const catSection = `
+                    <h3 class="text-3xl font-bold text-cyan-600 dark:text-cyan-400 mb-6">${cat.name}</h3>
+                    ${yearsHtml}
+                `;
+                pubsContainer.insertAdjacentHTML('beforeend', catSection);
+            });
+
+            // 8. Awards
+            if (data.awards) {
+                document.getElementById('awards-title').textContent = data.awards.title;
+                const awardsContainer = document.getElementById('awards-container');
+                
+                awardsContainer.className = "grid grid-cols-1 lg:grid-cols-2 gap-8";
+
+                data.awards.items.forEach(award => {
+                    const imageHtml = award.image ? `
+                        <div class="sm:w-2/5 h-48 sm:h-auto relative overflow-hidden bg-gray-50 dark:bg-gray-800/50 flex-shrink-0 border-b sm:border-b-0 sm:border-r border-gray-200 dark:border-gray-700/50 p-4 flex items-center justify-center">
+                            <img src="${award.image}" alt="${award.title}" class="award-img max-w-full max-h-full object-contain hover:scale-105 transition-transform duration-300 drop-shadow-sm">
+                        </div>` : '';
+
+                    const html = `
+                    <div class="card-style rounded-xl overflow-hidden flex flex-col sm:flex-row bg-white border border-gray-200 dark:bg-dark-card dark:border-dark-border">
+                        ${imageHtml}
+                        <div class="p-6 flex flex-col flex-grow justify-center">
+                            <div class="flex mb-3 justify-end">
+                                <span class="flex-shrink-0 text-cyan-600 dark:text-cyan-400 font-semibold bg-cyan-50 dark:bg-cyan-900/30 px-3 py-1 rounded-full text-xs border border-cyan-100 dark:border-cyan-800">
+                                    ${award.date}
+                                </span>
+                            </div>
+                            <div class="flex items-start mb-3">
+                                <h4 class="text-xl font-bold text-gray-900 dark:text-white leading-tight">${award.title}</h4>
+                            </div>
+                                
+                            <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed flex-grow">${award.description}</p>
+                            ${award.recipient ? `
+                            <div class="mt-4 pt-4 border-t border-gray-100 dark:border-gray-700/50">
+                                <p class="text-sm text-cyan-600 dark:text-cyan-400 font-medium">Recipient: <span class="text-gray-700 dark:text-gray-300">${award.recipient}</span></p>
+                            </div>` : ''}
+                        </div>
+                    </div>`;
+                    awardsContainer.insertAdjacentHTML('beforeend', html);
+                });
+            }
+
+            // 9. Contact
+            document.getElementById('contact-title').textContent = data.contact.title;
+            document.getElementById('contact-desc').textContent = data.contact.description;
+            //document.getElementById('map-placeholder').src = data.contact.map_placeholder;
+            
+            data.contact.items.forEach(item => {
+                const html = `
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0">
+                        <span class="h-12 w-12 rounded-lg bg-gray-200 dark:bg-gray-800 flex items-center justify-center text-cyan-600 dark:text-cyan-400">
+                           ${renderIcon(item.icon_svg)}
+                        </span>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-900 dark:text-white">${item.title}</h4>
+                        <div class="mt-1 text-gray-600 dark:text-gray-400">${item.content_html}</div>
+                    </div>
+                </div>`;
+                document.getElementById('contact-grid').insertAdjacentHTML('beforeend', html);
+            });
+
+            // Footer
+            document.getElementById('footer-text').innerHTML = `&copy; ${new Date().getFullYear()} ${data.footer.text}`;
+        }
+
+        // Initialize Swiper after DOM update
+        function initSwiper() {
+            const mySwiper = new Swiper('.swiper', {
+                loop: true,
+                autoplay: { delay: 4000, disableOnInteraction: false },
+                pagination: { el: '.swiper-pagination', clickable: true },
+                navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+                on: {
+                    slideChange: function () { updateCaption(this); },
+                    init: function () { updateCaption(this); }
+                }
+            });
+            function updateCaption(swiper) {
+                const slide = swiper.slides[swiper.activeIndex];
+                const caption = slide ? slide.getAttribute('data-caption') : '';
+                document.getElementById('swiper-caption').textContent = caption || '';
+            }
+        }
+
+        // Initialize Lightbox
+        function initLightbox() {
+            const lightbox = document.createElement('div');
+            lightbox.className = 'lightbox';
+            lightbox.innerHTML = `
+                <span class="lightbox-close">×</span>
+                <img class="lightbox-img" src="" alt="Enlarged Image">
+            `;
+            document.body.appendChild(lightbox);
+            
+            // 添加图片点击事件
+            document.querySelectorAll('.award-img').forEach(img => {
+                img.addEventListener('click', () => {
+                const lightboxImg = lightbox.querySelector('.lightbox-img');
+                lightboxImg.src = img.src;
+                lightbox.classList.add('active');
+                });
+            });
+            
+            // 关闭Lightbox
+            lightbox.querySelector('.lightbox-close').addEventListener('click', () => {
+                lightbox.classList.remove('active');
+            });
+            
+            // 点击外部关闭
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+                }
+            });
+        }
+
+        function initMap() {
+            var map = new BMap.Map("map-container");
+            var point = new BMap.Point(121.568010,29.808233);
+            
+            map.centerAndZoom(point, 15);
+            
+            map.enableScrollWheelZoom();
+            map.enableKeyboard();
+            map.enableDragging();
+            map.enableDoubleClickZoom()
+
+            var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+            scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+            map.addControl(scaleControl);
+            var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:1});
+            map.addControl(navControl);
+            var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:false});
+            map.addControl(overviewControl);
+            
+            var marker = new BMap.Marker(point);
+            var infoWindow = new BMap.InfoWindow(
+                '<div>' +
+                '<div class="info-window-title">Trent Building</div>' +
+                '<p class="info-window-text">University of Nottingham Ningbo China</p>' +
+                '<p class="info-window-text">199 Taikang E Rd, Yinzhou, Ningbo, Zhejiang</p>' +
+                '</div>',{
+                width: 260,
+                enableMessage: false
+            });
+            map.addOverlay(marker);
+            
+            marker.openInfoWindow(infoWindow, point);
+
+            marker.addEventListener("click", function() {
+                this.openInfoWindow(infoWindow);
+            });
+        }
+        // --- Start ---
+        loadContent();
+
+    </script>
+</body>
+</html>
