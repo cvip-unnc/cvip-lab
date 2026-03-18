@@ -104,7 +104,122 @@ team:
 
   # --- Other Groups (PhDs, Masters, etc.) ---
   groups:
+    - group_name: "Academic Staff"
+      members:
+        - name: "Anthony Graham Bellotti"
+          role: "Professor in Computer Science"
+          image: "people/anthony_graham_bellotti.jpg"
+          desc: "Research: Application of statistical models and machine learning to consumer credit risk."
+          links:
+            - url: "https://research.nottingham.edu.cn/en/persons/anthony-graham-bellotti/"
+              icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
+        
+        - name: "Guoping Qiu"
+          role: "Professor of Visual Information Processing"
+          image: "people/guoping_qiu.jpg"
+          desc: "Research: Visual Information Processing, Computational Photography/Video, HDR Imaging, Example-Based Image Processing, Large Image Database Management, Content-Based Image Indexing/Retrieval, Visual Browsing/Navigation, User Interface/Visualization for Image Repositories."
+          links:
+            - url: "https://people.cs.nott.ac.uk/pszqiu/"
+              icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
+
+        - name: "Ying Weng"
+          role: "Professor in Computer Science"
+          image: "people/ying_weng.jpg"
+          desc: "Research: AI/Machine Learning, Big Data in Image/Video Processing, Computer Vision, Brain Machine Interface, IoT & QoS in Wireless Networks, Multimedia Forensics."
+          links:
+            - url: "https://research.nottingham.edu.cn/en/persons/ying-weng/"
+              icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
+        
+        - name: "Heng Yu"
+          role: "Associate Professor in Computer Science"
+          image: "people/heng_yu.jpg"
+          desc: "Research: Implementation of AI algorithms/applications on intelligent embedded hardware/infrastructure and empowerment of computing systems with intelligence."
+          links:
+            - url: "https://research.nottingham.edu.cn/en/persons/heng-yu/"
+              icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
+
+        - name: "Heshan Du"
+          role: "Associate Professor in Computer Science"
+          image: "people/heshan_du.jpg"
+          desc: "Research: Logic, knowledge representation, reasoning, geographic information systems, and ontology & knowledge graphs."
+          links:
+            - url: "https://research.nottingham.edu.cn/en/persons/heshan-du/"
+              icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
+        
+        - name: "Jianfeng Ren"
+          role: "Associate Professor in Computer Science"
+          image: "people/jianfeng_ren.jpg"
+          desc: "Research: Face recognition, image/video processing, pattern recognition, deep learning, HCI, radar target recognition."
+          links:
+            - url: "https://research.nottingham.edu.cn/en/persons/jianfeng-ren/"
+              icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
+        
+        - name: "Kian Ming Lim"
+          role: "Associate Professor in Computer Science"
+          image: "people/kian_ming_lim.jpg"
+          desc: "Research: Deep Learning, Computer Vision, Few/Federated Learning, Pattern Recognition, Generative AI, NLP."
+          links:
+            - url: "https://research.nottingham.edu.cn/en/persons/kian-ming-lim/"
+              icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
+        
+        - name: "Pushpendu Kar"
+          role: "Associate Professor in Computer Science"
+          image: "people/pushpendu_kar.jpg"
+          desc: "Research: Ad Hoc Networks, Wireless Sensor Networks, IoT, Content-Centric Networking, Blockchain, Big Data Analytics, Quantum Communication."
+          links:
+            - url: "https://research.nottingham.edu.cn/en/persons/pushpendu-kar/"
+              icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
+        
+        - name: "Daokun Zhang"
+          role: "Assistant Professor in Computer Science"
+          image: "people/daokun_zhang.jpg"
+          desc: "Research: Graph Machine Learning, Graph Representation/Structure Learning, Node Classification, Link Prediction, Weakly Supervised Learning, Uncertainty Quantification, Next-Gen Graph Neural Networks."
+          links:
+            - url: "https://research.nottingham.edu.cn/en/persons/daokun-zhang/"
+              icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
+
+        - name: "Huan Jin"
+          role: "Assistant Professor in Computer Science"
+          image: "people/huan_jin.jpg"
+          desc: "Research: Optimisation (LP/IP/MIP) & ML techniques for large-scale problems (vehicle routing, transport scheduling, network design)."
+          links:
+            - url: "https://research.nottingham.edu.cn/en/persons/huan-jin/"
+              icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
+        
+        - name: "Qian Zhang"
+          role: "Assistant Professor in Computer Science"
+          image: "people/qian_zhang.jpg"
+          desc: "Research: Computer Vision, Partial-Duplicate Image Discovery, Duplicate Image Detection, Content-Based Image Retrieval, Image Spatial Verification, Pattern Recognition, Large-Scale Image Clustering, Knowledge Discovery in Image Collections."
+          links:
+            - url: "https://research.nottingham.edu.cn/en/persons/qian-zhang/"
+              icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
+        
+        - name: "Yuan Yao"
+          role: "Assistant Professor in Computer Science"
+          image: "people/yuan_yao.jpg"
+          desc: "Research: Autonomous Agents, MAS, Agent Reasoning/Learning, MAS Architecture/Verification, Agent-Oriented Software, MAS Apps."
+          links:
+            - url: "https://research.nottingham.edu.cn/en/persons/yuan-yao/"
+              icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
+
+        - name: "Zheng LU"
+          role: "Assistant Professor in Computer Science"
+          image: "people/zheng_lu.jpg"
+          desc: "Research: Computer Vision, Image Processing, Machine Learning, Applied Computer Vision for eHeritage, Egocentric Video Analysis, Object/Action Recognition, Visual Discovery, Big Data Analytics."
+          links:
+            - url: "https://research.nottingham.edu.cn/en/persons/zheng-lu/"
+              icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
+        
+        - name: "Qiao Lin"
+          role: "Teaching Fellow in Computer Science"
+          image: "people/qiao_lin.jpg"
+          desc: "Research: Trustworthy AI, Medical Image Segmentation, AI Model Uncertainty, Fuzzy Logic, Large Models."
+          links:
+            - url: "https://research.nottingham.edu.cn/en/persons/qiao-lin/"
+              icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
+        
     - group_name: "PhD Students"
+      group_subtitle: "Supervised by Prof. Xiangjian He"
       members:
         - name: "Xinheng Lyu"
           role: "2024 Fall"
@@ -220,6 +335,7 @@ team:
           desc: "Research: Information Extraction, Knowledge Graph"
 
     - group_name: "Master Students"
+      group_subtitle: "Supervised by Prof. Xiangjian He"
       members:
         - name: "Anqi Zhang"
           role: "Master Student"
@@ -266,121 +382,6 @@ team:
         - name: "Tao Wu"
           role: "Software Engineer"
           image: "people/tao_wu.jpg"
-
-    - group_name: "Academic Staff"
-      members:
-        - name: "Dr Anthony Graham Bellotti"
-          role: "Professor in Computer Science"
-          image: "people/anthony_graham_bellotti.jpg"
-          desc: "Research: Application of statistical models and machine learning to consumer credit risk."
-          links:
-            - url: "https://research.nottingham.edu.cn/en/persons/anthony-graham-bellotti/"
-              icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
-        
-        - name: "Dr Guoping Qiu"
-          role: "Professor of Visual Information Processing"
-          image: "people/guoping_qiu.jpg"
-          desc: "Research: Visual Information Processing, Computational Photography/Video, HDR Imaging, Example-Based Image Processing, Large Image Database Management, Content-Based Image Indexing/Retrieval, Visual Browsing/Navigation, User Interface/Visualization for Image Repositories."
-          links:
-            - url: "https://people.cs.nott.ac.uk/pszqiu/"
-              icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
-
-        - name: "Dr Ying Weng"
-          role: "Professor in Computer Science"
-          image: "people/ying_weng.jpg"
-          desc: "Research: AI/Machine Learning, Big Data in Image/Video Processing, Computer Vision, Brain Machine Interface, IoT & QoS in Wireless Networks, Multimedia Forensics."
-          links:
-            - url: "https://research.nottingham.edu.cn/en/persons/ying-weng/"
-              icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
-        
-        - name: "Dr Heng Yu"
-          role: "Associate Professor in Computer Science"
-          image: "people/heng_yu.jpg"
-          desc: "Research: Implementation of AI algorithms/applications on intelligent embedded hardware/infrastructure and empowerment of computing systems with intelligence."
-          links:
-            - url: "https://research.nottingham.edu.cn/en/persons/heng-yu/"
-              icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
-
-        - name: "Dr Heshan Du"
-          role: "Associate Professor in Computer Science"
-          image: "people/heshan_du.jpg"
-          desc: "Research: Logic, knowledge representation, reasoning, geographic information systems, and ontology & knowledge graphs."
-          links:
-            - url: "https://research.nottingham.edu.cn/en/persons/heshan-du/"
-              icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
-        
-        - name: "Dr Jianfeng Ren"
-          role: "Associate Professor in Computer Science"
-          image: "people/jianfeng_ren.jpg"
-          desc: "Research: Face recognition, image/video processing, pattern recognition, deep learning, HCI, radar target recognition."
-          links:
-            - url: "https://research.nottingham.edu.cn/en/persons/jianfeng-ren/"
-              icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
-        
-        - name: "Dr Kian Ming Lim"
-          role: "Associate Professor in Computer Science"
-          image: "people/kian_ming_lim.jpg"
-          desc: "Research: Deep Learning, Computer Vision, Few/Federated Learning, Pattern Recognition, Generative AI, NLP."
-          links:
-            - url: "https://research.nottingham.edu.cn/en/persons/kian-ming-lim/"
-              icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
-        
-        - name: "Dr Pushpendu Kar"
-          role: "Associate Professor in Computer Science"
-          image: "people/pushpendu_kar.jpg"
-          desc: "Research: Ad Hoc Networks, Wireless Sensor Networks, IoT, Content-Centric Networking, Blockchain, Big Data Analytics, Quantum Communication."
-          links:
-            - url: "https://research.nottingham.edu.cn/en/persons/pushpendu-kar/"
-              icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
-        
-        - name: "Dr Daokun Zhang"
-          role: "Assistant Professor in Computer Science"
-          image: "people/daokun_zhang.jpg"
-          desc: "Research: Graph Machine Learning, Graph Representation/Structure Learning, Node Classification, Link Prediction, Weakly Supervised Learning, Uncertainty Quantification, Next-Gen Graph Neural Networks."
-          links:
-            - url: "https://research.nottingham.edu.cn/en/persons/daokun-zhang/"
-              icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
-
-        - name: "Dr Huan Jin"
-          role: "Assistant Professor in Computer Science"
-          image: "people/huan_jin.jpg"
-          desc: "Research: Optimisation (LP/IP/MIP) & ML techniques for large-scale problems (vehicle routing, transport scheduling, network design)."
-          links:
-            - url: "https://research.nottingham.edu.cn/en/persons/huan-jin/"
-              icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
-        
-        - name: "Dr Qian Zhang"
-          role: "Assistant Professor in Computer Science"
-          image: "people/qian_zhang.jpg"
-          desc: "Research: Computer Vision, Partial-Duplicate Image Discovery, Duplicate Image Detection, Content-Based Image Retrieval, Image Spatial Verification, Pattern Recognition, Large-Scale Image Clustering, Knowledge Discovery in Image Collections."
-          links:
-            - url: "https://research.nottingham.edu.cn/en/persons/qian-zhang/"
-              icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
-        
-        - name: "Dr Yuan Yao"
-          role: "Assistant Professor in Computer Science"
-          image: "people/yuan_yao.jpg"
-          desc: "Research: Autonomous Agents, MAS, Agent Reasoning/Learning, MAS Architecture/Verification, Agent-Oriented Software, MAS Apps."
-          links:
-            - url: "https://research.nottingham.edu.cn/en/persons/yuan-yao/"
-              icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
-
-        - name: "Dr Zheng LU"
-          role: "Assistant Professor in Computer Science"
-          image: "people/zheng_lu.jpg"
-          desc: "Research: Computer Vision, Image Processing, Machine Learning, Applied Computer Vision for eHeritage, Egocentric Video Analysis, Object/Action Recognition, Visual Discovery, Big Data Analytics."
-          links:
-            - url: "https://research.nottingham.edu.cn/en/persons/zheng-lu/"
-              icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
-        
-        - name: "Dr Qiao Lin"
-          role: "Teaching Fellow in Computer Science"
-          image: "people/qiao_lin.jpg"
-          desc: "Research: Trustworthy AI, Medical Image Segmentation, AI Model Uncertainty, Fuzzy Logic, Large Models."
-          links:
-            - url: "https://research.nottingham.edu.cn/en/persons/qiao-lin/"
-              icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
-        
 
     # - group_name: "Affiliated Faculty"
     #   members:
