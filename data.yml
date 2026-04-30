@@ -53,6 +53,10 @@ about:
 
   highlights_title: "Lab Highlights"
   highlights:
+    - image: "highlights/nottingham_UK_visit_group.jpg"
+      caption: "Nottingham, UK Visit Group Photo"
+    - image: "highlights/competition_group.jpg"
+      caption: "1st Place, ISBI 2026 Ultrasound Foundation Model Challenge."
     - image: "highlights/chair_professor.jpg"
       caption: "Prof. Xiangjian He appointed as Chair Professor at UNNC."
     - image: "highlights/ICOIP2025.jpg"
@@ -63,6 +67,14 @@ about:
 news:
   title: "Lab News"
   items:
+    - date: "Mar. 2026"
+      content: "One paper accepted to <span class='font-bold'>CVPR 2026</span>. Congrats to Jiaqi Yang!"
+    - date: "Mar. 2026"
+      content: "One paper accepted to <span class='font-bold'>Knowledge-Based Systems (KBS)</span>. Congrats to Qing Xu and Yanqian Wang!"
+    - date: "Feb. 2026"
+      content: "We achieved 1st place in the <span class='font-bold'>ISBI 2026 Foundation Model Challenge</span> for Ultrasound Image Analysis! Congrats to the team!"
+    - date: "Feb. 2026"
+      content: "Two papers accepted to <span class='font-bold'>ISBI 2026</span>. Congrats to Yixuang Zhang, Qing Xu and Yue Li!"
     - date: "Dec. 2025"
       content: "One paper accepted to <span class='font-bold'>IEEE Transactions on Multimedia (TMM)</span>. Congrats to Yue Li!"
     - date: "Dec. 2025"
@@ -106,14 +118,14 @@ team:
   groups:
     - group_name: "Academic Staff"
       members:
-        - name: "Anthony Graham Bellotti"
-          role: "Professor in Computer Science"
-          image: "people/anthony_graham_bellotti.jpg"
-          desc: "Research: Application of statistical models and machine learning to consumer credit risk."
+        - name: "Jonathan M. Garibaldi"
+          role: "Provost of the UNNC"
+          image: "people/jongaribaldi.jpg"
+          desc: "Research: Human Decision Making Modeling, Medical Uncertainty & Fuzzy Logic, Intelligent Clinical Systems, Medical Knowledge Representation, Machine Learning (Clustering/Classification/Optimization), Adaptive & Time-Varying Behavior."
           links:
-            - url: "https://research.nottingham.edu.cn/en/persons/anthony-graham-bellotti/"
+            - url: "https://people.cs.nott.ac.uk/pszjmg/"
               icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
-        
+
         - name: "Guoping Qiu"
           role: "Professor of Visual Information Processing"
           image: "people/guoping_qiu.jpg"
@@ -122,6 +134,14 @@ team:
             - url: "https://people.cs.nott.ac.uk/pszqiu/"
               icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
 
+        - name: "Anthony Graham Bellotti"
+          role: "Professor in Computer Science"
+          image: "people/anthony_graham_bellotti.jpg"
+          desc: "Research: Application of statistical models and machine learning to consumer credit risk."
+          links:
+            - url: "https://research.nottingham.edu.cn/en/persons/anthony-graham-bellotti/"
+              icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
+        
         - name: "Ying Weng"
           role: "Professor in Computer Science"
           image: "people/ying_weng.jpg"
@@ -377,8 +397,16 @@ team:
           image: "people/miao_wang.jpg"
           previous: "B.S. from Hubei University of Education"
 
-    - group_name: "Research Assistants & Engineers"
+    - group_name: "Technical Staff"
       members:
+        - name: "Han Zhang"
+          role: "Research Associate"
+          image: "people/han_zhang.jpg"
+
+        - name: "Biao Zhou"
+          role: "Key Discipline Assistant"
+          image: "people/zhou_biao.jpg"
+
         - name: "Tao Wu"
           role: "Software Engineer"
           image: "people/tao_wu.jpg"
@@ -489,6 +517,18 @@ publications:
 awards:
   title: "Awards"
   items:
+    - title: "Invention Patent: 一种医学影像的分割方法、系统及装置"
+      description: "A Medical Image Segmentation Method, System, and Apparatus."
+      recipient: "Xiangjian He, Yue Li, Qing Xu, Yixuan Zhang"
+      date: "Mar 2026"
+      image: "award/ZL202510765617_专利证书.jpg"
+
+    - title: "1st Place Overall, ISBI 2026 Foundation Model Challenge For Ultrasound Image Analysis"
+      description: "The team 'UltraTAR' was awarded 1st Place Overall in the FMC_UIA challenge at the 2026 IEEE International Symposium on Biomedical Imaging."
+      recipient: "Xiangjian He, Yixuan Zhang, Qing Xu, Yue Li, Zhen Chen"
+      date: "Feb 2026"
+      image: "award/ISBI_2026_Certificate.jpg"
+
     - title: "A Hybrid CNN-Transformer-Based Technique for Precision Medical Image Segmentation"
       description: "This research proposed a Hybrid CNN-Transformer model that effectively enhances the ability to capture local features and model long-range dependencies, thereby improving the segmentation accuracy."
       recipient: "Xiangjian He, Jiaxuan Li, Qing Xu"
