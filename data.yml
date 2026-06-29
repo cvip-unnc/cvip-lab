@@ -67,6 +67,12 @@ about:
 news:
   title: "Lab News"
   items:
+    - date: "Jun. 2026"
+      content: "Invited to serve as Senior Program Committee of <span class='font-bold'>AAAI 2027</span> in Montréal, Canada."
+    - date: "Jun. 2026"
+      content: "One paper accepted to <span class='font-bold'>MICCAI 2026</span>. Congrats to Qing Xu! "
+    - date: "May. 2026"
+      content: "One paper accepted to <span class='font-bold'>npj Digital Medicine</span>. Congrats to Meiyuan Wen! "
     - date: "Mar. 2026"
       content: "One paper accepted to <span class='font-bold'>CVPR 2026</span>. Congrats to Jiaqi Yang!"
     - date: "Mar. 2026"
@@ -448,71 +454,157 @@ publications:
   categories:
     - name: "Journal Papers"
       years:
+        - year: 2026
+          papers:
+            - title: "Generalizable CT-Free PET Attenuation and Scatter Correction via Few-Shot Cross Domain Adaptation"
+              authors: "Hanzhong Wang, Meiyuan Wen, Xiaoya Qiao, Qianhao Chen, Yi An, Xin Chen, Ruijie Guo, Qiu Huang, Xiaohua Zhu, Zhaoping Cheng, Jiehua Xu, Hairong Zheng, Dong Liang, <span class='font-bold'>Xiangjian He</span>, Zhanli Hu, Biao Li"
+              venue: "npj Digital Medicine"
+              links:
+                - { text: "[ PDF ]", url: "https://www.researchgate.net/publication/404880213_Generalizable_CT-free_PET_attenuation_and_scatter_correction_via_few-shot_cross_domain_adaptation" }
+
+            - title: "Accurate Segmentation of Surgical Instruments via Spectral-attentive Contextual Interaction Network"
+              authors: "Jiaxin Mei, Yizhe Zhang, <span class='font-bold'>Xiangjian He</span>, Tao Zhou"
+              venue: "IEEE Journal of Biomedical and Health Informatics (JBHI)"
+              links:
+                - { text: "[ PDF ]", url: "https://www.researchgate.net/publication/403465536_Accurate_Segmentation_of_Surgical_Instruments_via_Spectral-Attentive_Contextual_Interaction_Network" }
+
+            - title: "UniUltra: Interactive Parameter-Efficient SAM2 for Universal Ultrasound Segmentation"
+              authors: "Yue Li, Qing Xu, Yixuan Zhang, <span class='font-bold'>Xiangjian He</span>, Qian Zhang, Yuan Yao, Fiseha B. Tesem, Xin Chen, Ruili Wang, Zhen Chen, Chang Wen Chen"
+              venue: "IEEE Transactions on Multimedia (TMM)"
+              links:
+                - { text: "[ PDF ]", url: "https://arxiv.org/pdf/2511.15771" }
+
+            - title: "Action Recognition in RGB-D Videos via an End-To-End Cross-Modal Attention Transformer"
+              authors: "Yujun Ma, Benjia Zhou, Hong Zhang, Xizheng Zhang, <span class='font-bold'>Xiangjian He</span>, Ruili Wang"
+              venue: "IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)"
+              links:
+                - { text: "[ PDF ]", url: "https://www.researchgate.net/publication/402635925_Action_Recognition_in_RGB-D_Videos_via_an_End-To-End_Cross-Modal_Attention_Transformer" }
+
+            - title: "SP-Det: Self-Prompted Dual-Text Fusion for Generalized Multi-Label Lesion Detection"
+              authors: "Qing Xu, Yanqian Wang, <span class='font-bold'>Xiangjian He</span>, Yue Li, Yixuan Zhang, Rong Qu, Wenting Duan, Zhen Chen"
+              venue: "Knowledge-Based Systems (KBS)"
+              links:
+                - { text: "[ PDF ]", url: "https://arxiv.org/pdf/2512.04875" }
+
+            - title: "Image quality restoration in 15-s breath-hold PET using a diffusion-based neural network"
+              authors: "Jingxi Hu, Lianghua Li, Qiyang Zhang, Weijun Wei, Gang Huang, Jianjun Liu, Dong Liang, Hairong Zheng, Zhanli Hu, <span class='font-bold'>Xiangjian He</span>, Na Zhang"
+              venue: "Medical Physics"
+              links:
+                - { text: "[ PDF ]", url: "https://pubmed.ncbi.nlm.nih.gov/41761600/" }
+
+            - title: "UDG-Prom: A Unified Dense-Guided Semantic Prompting for Cross-Domain Few-Shot Image Segmentation"
+              authors: "Jiaqi Yang, <span class='font-bold'>Xiangjian He</span>, Xin CHen, Yaning Zhang, Jingxi Hu, Linlin Shen, Guoping Qiu"
+              venue: "Knowledge-Based Systems (KBS)"
+              links:
+                - { text: "[ PDF ]", url: "https://www.researchgate.net/publication/399157805_UDG-Prom_A_Unified_Dense-Guided_Semantic_Prompting_for_Cross-Domain_Few-Shot_Image_Segmentation" }
+
+            - title: "Reliable-Teacher: Uncertainty-Guided Collaborative Learning for Nighttime Object Detection"
+              authors: "Heng Luo, Yue Xi, Wenjing Jia, Jiaqi Xiao, Jinchang Ren, Di Yuan, Qiguang Miao, <span class='font-bold'>Xiangjian He</span>"
+              venue: "IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)"
+              links:
+                - { text: "[ PDF ]", url: "https://ieeexplore.ieee.org/abstract/document/11398391" }
         - year: 2025
           papers:
             - title: "De-LightSAM: Modality-Decoupled Lightweight SAM for Generalizable Medical Segmentation"
-              authors: "Qing Xu, Jiaxuan Li, <span class='font-bold'>Xiangjian He</span>, et al."
+              authors: "Qing Xu, Jiaxuan Li, <span class='font-bold'>Xiangjian He</span>, Chenxin Li, Fiseha B.Tesem, Wenting Duan, Zhen Chen, Rong Qu, Jonathan M. Garibaldi, Chang Wen Chen"
               venue: "IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), IF:11.1, CAS Q1"
               links:
-                - { text: "[ PDF ]", url: "#" }
+                - { text: "[ PDF ]", url: "#https://arxiv.org/abs/2407.14153" }
                 
             - title: "HFA-UNet: Hybrid and Full Attention UNet for Thyroid Nodule Segmentation"
-              authors: "Yue Li, Yuanhao Zou, <span class='font-bold'>Xiangjian He</span>, et al."
+              authors: "Yue Li, Yuanhao Zou, <span class='font-bold'>Xiangjian He</span>, Qing Xu, Ming Liu, Shengji Jin, Qian Zhang, Maggie M. He, Jian Zhang"
               venue: "Knowledge-Based Systems (KBS), IF:7.6, CAS Q1"
               links:
-                - { text: "[ PDF ]", url: "#" }
+                - { text: "[ PDF ]", url: "#https://doi.org/10.1016/j.knosys.2025.114245" }
 
             - title: "MambaVesselNet++: A Hybrid CNN-Mamba Architecture for Medical Image Segmentation"
-              authors: "Qing Xu, Yanming Chen, Yue Li... <span class='font-bold'>Xiangjian He</span>"
+              authors: "Qing Xu, Yanming Chen, Yue Li, Ziyu Liu, Zhenye Lou, Yixuan Zhang, Huizhong Zheng, <span class='font-bold'>Xiangjian He</span>"
               venue: "ACM Transactions on Multimedia Computing, Communications and Applications (TOMM)"
               links:
-                 - { text: "[ PDF ]", url: "#" }
+                 - { text: "[ PDF ]", url: "#https://www.researchgate.net/publication/394996910_MambaVesselNet_A_Hybrid_CNN-Mamba_Architecture_for_Medical_Image_Segmentation" }
             
             - title: "NuSegDG: Integration of Heterogeneous Space and Gaussian Kernel for Domain-Generalized Nuclei Segmentation"
-              authors: "Zhenye Lou, Qing Xu, <span class='font-bold'>Xiangjian He</span>, et al."
+              authors: "Zhenye Lou, Qing Xu, Zekun Jiang, <span class='font-bold'>Xiangjian He</span>, Chenxin Li, Zhen Chen, Yi Wang, Maggie M. He, Wenting Duan"
               venue: "Knowledge-Based Systems (KBS)"
               links:
-                 - { text: "[ PDF ]", url: "#" }
+                 - { text: "[ PDF ]", url: "#https://arxiv.org/pdf/2408.11787" }
 
             - title: "Diffusion-Based Model for Parametric Ki Generation From Total-Body Dynamic PET of Short-Duration Scan"
-              authors: "Meiyuan Wen, Yaping Wu... <span class='font-bold'>Xiangjian He</span>, et al."
+              authors: "Meiyuan Wen, Yaping Wu, Zhenxing Huang, <span class='font-bold'>Xiangjian He</span>, Fiseha B. Tesema, Zixiang Chen, Yunlong Gao, Wenbo Li, Xinlan Yang, Yongfeng Yang, Hairong Zheng, Dong Liang, Meiyun Wang, Zhanli Hu"
               venue: "IEEE Transactions on Radiation and Plasma Medical Sciences (TRPMS)"
               links:
-                 - { text: "[ PDF ]", url: "#" }
+                 - { text: "[ PDF ]", url: "#https://ieeexplore.ieee.org/abstract/document/10982123" }
             
             - title: "Depression Diagnosis Through Emotional Induction and Physiological Signals: A Systematic Review"
-              authors: "Jing Liu, <span class='font-bold'>Xiangjian He</span>, Xu Sun, David Lo"
+              authors: "Jing Liu, <span class='font-bold'>Xiangjian He</span>, Xu Sun, David Jo"
               venue: "Neuroscience & Biobehavioral Reviews"
               links:
-                 - { text: "[ PDF ]", url: "#" }
+                 - { text: "[ PDF ]", url: "#https://pubmed.ncbi.nlm.nih.gov/40602453" }
 
             - title: "CFFormer: Cross CNN-Transformer Channel Attention and Spatial Feature Fusion for Improved Segmentation"
-              authors: "Jiaxuan Li, Qing Xu, <span class='font-bold'>Xiangjian He</span>, et al."
+              authors: "Jiaxuan Li, Qing Xu, <span class='font-bold'>Xiangjian He</span>, Ziyu Liu, Daokun Zhang, Ruili Wang, Rong Qu, Guoping Qiu"
               venue: "Expert Systems with Applications (ESWA)"
               links:
-                 - { text: "[ PDF ]", url: "#" }
+                 - { text: "[ PDF ]", url: "#https://www.researchgate.net/publication/393283661_CFFormer_Cross_CNN-Transformer_Channel_Attention_and_Spatial_Feature_Fusion_for_Improved_Segmentation_of_Heterogeneous_Medical_Images" }
 
     - name: "Conference Papers"
       years:
+        - year: 2026
+          papers:
+            - title: "Towards Universal Ultrasound Analysis: Parameter-Efficient Foundation Model With Task-Aware Routing for Heterogeneous Multi-Task Learning"
+              authors: "Yixuan Zhang, Qing Xu, Yue Li, <span class='font-bold'>Xiangjian He</span>, Zhen Chen"
+              venue: "ISBI 2026"
+              links:
+                - { text: "[ PDF ]", url: "https://www.researchgate.net/publication/405085513_Towards_Universal_Ultrasound_Analysis_Parameter-Efficient_Foundation_Model_With_Task-Aware_Routing_for_Heterogeneous_Multi-Task_Learning" }
+
+            - title: "FreqDINO: Frequency-Guided Adaptation for Generalized Boundary-Aware Ultrasound Image Segmentation"
+              authors: "Yixuan Zhang, Qing Xu, Yue Li, <span class='font-bold'>Xiangjian He</span>, Qian Zhang, Mainul Haque, Rong Qu, Wenting Duan, Zhen Chen"
+              venue: "ISBI 2026"
+              links:
+                - { text: "[ PDF ]", url: "https://arxiv.org/pdf/2512.11335" }
+
+            - title: "Tm-unet: Token-memory enhanced sequential modeling for efficient medical image segmentation"
+              authors: "Yaxuan Jiao, Qing Xu, Yuxiang Luo, <span class='font-bold'>Xiangjian He</span>, Zhen Chen, Wenting Duan"
+              venue: "ISBI 2026"
+              links:
+                - { text: "[ PDF ]", url: "https://arxiv.org/pdf/2511.12270" }
+
+            - title: "BiPA: Bilevel Prompt Adaptation for Underwater Instance Segmentation"
+              authors: "Long Ma, Haoze Zheng, Yuhang Mao, Jinyuan Liu, Chengpei Xu, Xinwei Xue, Yi Wang, <span class='font-bold'>Xiangjian He</span>, Weimin Wang"
+              venue: "CVPR 2026"
+              links:
+                - { text: "[ PDF ]", url: "https://openaccess.thecvf.com/content/CVPR2026/papers/Ma_BiPA_Bilevel_Prompt_Adaptation_for_Underwater_Instance_Segmentation_CVPR_2026_paper.pdf" }
+
+            - title: "H2-Surv: Hierarchical Hyperbolic Multimodal Representation Learning for Survival Prediction"
+              authors: "Jiaqi Yang, Wenting Chen, <span class='font-bold'>Xiangjian He</span>, Yuanbai Li, Sen Yang, Linin Shen, Xiaohan Xing"
+              venue: "CVPR 2026"
+              links:
+                - { text: "[ PDF ]", url: "https://openaccess.thecvf.com/content/CVPR2026/papers/Yang_H2-Surv_Hierarchical_Hyperbolic_Multimodal_Representation_Learning_for_Survival_Prediction_CVPR_2026_paper.pdf" }
+
+            - title: "Localizing, Structuring, and Rendering: Bridging 3D and 2D Vision-Language-Action Models for Robotic Manipulation"
+              authors: "Yunlong Zhao, Xiaoheng Deng, Yichao Cao, Yi Chen, <span class='font-bold'>Xiangjian He</span>, Shan You, Shuo Yang, Lei Fan, Fei Wang, Xiu Su"
+              venue: "CVPR 2026"
+              links:
+                - { text: "[ PDF ]", url: "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhao_Localizing_Structuring_and_Rendering_Bridging_3D_and_2D_Vision-Language-Action_Models_CVPR_2026_paper.pdf" }
         - year: 2025
           papers:
             - title: "WSI-Agents: A Collaborative Multi-Agent System for Multi-Modal Whole Slide Image Analysis"
-              authors: "Xinheng Lyu, Yuci Liang... <span class='font-bold'>Xiangjian He</span>, Linlin Shen"
+              authors: "Xinheng Lyu, Yuci Liang, Wenting Chen, Meidan Ding, Jiaqi Yang, Guolin Huang, Daokun Zhang, <span class='font-bold'>Xiangjian He</span>, Linlin Shen"
               venue: "MICCAI 2025 (Oral)"
               links:
-                - { text: "[ PDF ]", url: "#" }
+                - { text: "[ PDF ]", url: "#https://papers.miccai.org/miccai-2025/paper/0994_paper.pdf" }
 
             - title: "WSI-LLAVA: a multimodal large language model for whole slide image"
-              authors: "Yuci Liang, Xinheng Lyu... <span class='font-bold'>Xiangjian He</span>, Linlin Shen"
+              authors: "Yuci Liang, Xinheng Lyu, Wenting Chen, Meidan Ding, Jipeng Zhang, <span class='font-bold'>Xiangjian He</span>, Song Wu, Xiaohan Xing, Sen Yang, Xiyue Wang, Linlin Shen"
               venue: "ICCV 2025"
               links:
-                - { text: "[ PDF ]", url: "#" }
+                - { text: "[ PDF ]", url: "#https://arxiv.org/pdf/2412.02141" }
 
             - title: "Swin-VasMamba: A Topologically Constrained Model For 3D Vascular Segmentation"
-              authors: "Ziyu Liu, Jiaxuan Li, <span class='font-bold'>Xiangjian He</span>, et al."
+              authors: "Ziyu Liu, Jiaxuan Li, <span class='font-bold'>Xiangjian He</span>, Qing Xu, Xin Chen, Shoujun Zhou"
               venue: "ICASSP 2025"
               links:
-                - { text: "[ PDF ]", url: "#" }
+                - { text: "[ PDF ]", url: "#https://www.researchgate.net/publication/390538373_Swin-VasMamba_A_Topologically_Constrained_Model_For_3D_Vascular_Segmentation" }
 
 awards:
   title: "Awards"
