@@ -119,7 +119,7 @@ team:
     group_title: "Director"
     name: "Professor Xiangjian He"
     role: "Lab Director / Chair Professor / National Talent"
-    image: "people/xiangjian_he.jpeg"
+    image: "people/xiangjian_he.jpg"
     bio_paragraphs:
       - 'Prof. Xiangjian He is the founding director of the CVIP Lab and a chair professor in the School of Computer Science at University of Nottingham Ningbo China. He is a high-level national talent and has been listed among Stanford University and Elsevier''s "World''s Top 2% Scientists".'
       - "He has served as Chair for IEEE/ACM conferences including ACM MM, IEEE BigData, and IEEE ICPR. He has published extensively in top-tier conferences and journals, including TPAMI, TMM, TCSVT, CVPR, ICCV, AAAI and MICCAI. He is currently an Associate Editor of IEEE Transactions on Multimedia."
@@ -294,7 +294,7 @@ team:
 
         - name: "Fengyi Shen"
           role: "2024 Fall"
-          image: "people/fengyi_shen.jpeg"
+          image: "people/fengyi_shen.jpg"
           previous: "M.S from The University of New South Wales"
           desc: "Research: Medical Image Segmentation"
 
@@ -315,7 +315,7 @@ team:
 
         - name: "Meiyuan Wen"
           role: "2024 Spring"
-          image: "people/meiyuan_wen.jpeg"
+          image: "people/meiyuan_wen.jpg"
           previous: "M.S. from The Hong Kong Polytechnic University"
           joint: "Joint Ph.D. with Shenzhen Institutes of Advanced Technology, CAS"
           desc: "Research: Medical Imaging"
