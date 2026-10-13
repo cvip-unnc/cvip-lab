@@ -256,6 +256,25 @@ team:
     - group_name: "PhD Students"
       group_subtitle: "Supervised by Prof. Xiangjian He"
       members:
+        - name: "Yixuan Zhang"
+          role: "2026 Fall"
+          image: "people/yixuan_zhang.jpg"
+          previous: "B.S. from Hangzhou City University"
+          desc: "Research: Incomplete Annotation Learning"
+
+        - name: "Zhuochen Li"
+          role: "2026 Fall"
+          image: "people/zhuochen_li.jpg"
+          previous: "B.S. from Southwest Forestry University"
+          joint: "Joint Ph.D. with Yongjiang Laboratory"
+          desc: "Research: 3D Reconstruction"
+
+        - name: "Gaoshang Dong"
+          role: "2026 Fall"
+          image: "people/gaoshang_dong.jpg"
+          joint: "Joint Ph.D. with Shenzhen University of Advanced Technology"
+          desc: "Research: Medical Image Analysis"
+
         - name: "Xinheng Lyu"
           role: "2024 Fall"
           image: "people/xinheng_lyu.jpg"
@@ -351,7 +370,7 @@ team:
 
         - name: "Jiahui He"
           role: "2022 Fall"
-          image: "people/jiahui_he.JPG"
+          image: "people/jiahui_he.jpg"
           previous: "M.S. from The University of Dundee"
           joint: "Joint Ph.D. with Shenzhen Institutes of Advanced Technology, CAS"
           desc: "Research: Medical Imaging Process and Analysis"
@@ -362,25 +381,6 @@ team:
           previous: "M.S. from University of Sussex"
           joint: "Joint Ph.D. with Shenzhen Institutes of Advanced Technology, CAS"
           desc: "Research: Medical Image Segmentation"
-
-        - name: "Yixuan Zhang"
-          role: "2026 Fall"
-          image: "people/yixuan_zhang.jpg"
-          previous: "B.S. from Hangzhou City University"
-          desc: "Research: Incomplete Annotation Learning"
-
-        - name: "Zhuochen Li"
-          role: "2026 Fall"
-          image: "people/zhuochen_li.jpg"
-          previous: "B.S. from Southwest Forestry University"
-          joint: "Joint Ph.D. with Yongjiang Laboratory"
-          desc: "Research: 3D Reconstruction"
-
-        - name: "Gaoshang Dong"
-          role: "2026 Fall"
-          image: "people/gaoshang_dong.jpg"
-          joint: "Joint Ph.D. with Shenzhen University of Advanced Technology"
-          desc: "Research: Medical Image Analysis"
 
     - group_name: "Master Students"
       group_subtitle: "Supervised by Prof. Xiangjian He"
@@ -619,7 +619,7 @@ publications:
           papers:
             - title: "Rethinking the Adaptation of Vision Foundation Models for Efficient Cell Segmentation"
               authors: "Qing Xu, <span class='font-bold'>Xiangjian He</span>, Wenting Duan, Jiebo Luo, Zhen Chen"
-              venue: "arXiv preprint arXiv:2606.21913"
+              venue: "MICCAI 2026"
               links:
                 - { text: "[ PDF ]", url: "https://arxiv.org/pdf/2606.21913" }
 
