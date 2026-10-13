@@ -28,31 +28,36 @@ about:
   paragraphs:
     - "The Computer Vision and Intelligent Perception (CVIP) Lab at the University of Nottingham Ningbo China is a world-class research center dedicated to advancing artificial intelligence, computer vision, and machine learning for transformative healthcare applications. Our mission is to develop robust, generalizable, and intelligent perception systems that bridge advanced AI technologies with critical medical challenges."
     - "Founded by Prof. Xiangjian He, our lab fosters a collaborative and innovative environment, bringing together talented researchers from diverse backgrounds. We pioneer novel deep learning architectures, addressing real-world problems in medical imaging, pathology, radiology, and mental health diagnostics, with strong impact across both academic research and clinical practice."
-  
+
   research_focus_title: "Research Focus"
   research_areas:
     - title: "Medical Image Segmentation & CV"
       description: "Specializing in multi-modal medical image segmentation (thyroid nodules, nuclei, vessels) and domain generalization for optimized processing."
       icon_svg: '<svg class="h-10 w-10 text-cyan-600 dark:text-cyan-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h4a1 1 0 010 2H5.414l4.293 4.293a1 1 0 01-1.414 1.414L4 6.414V9a1 1 0 01-2 0V4zm17 0a1 1 0 00-1-1h-4a1 1 0 000 2h2.586l-4.293 4.293a1 1 0 101.414 1.414L19 6.414V9a1 1 0 002 0V4zM3 20a1 1 0 001 1h4a1 1 0 000-2H5.414l4.293-4.293a1 1 0 00-1.414-1.414L4 17.586V15a1 1 0 00-2 0v5zm17 0a1 1 0 01-1 1h-4a1 1 0 010-2h2.586l-4.293-4.293a1 1 0 011.414-1.414L19 17.586V15a1 1 0 012 0v5z" /></svg>'
-    
+
     - title: "Multi-modal AI & Medical LLMs"
       description: "Developing collaborative multi-agent systems and multi-modal fusion techniques to advance intelligent medical diagnosis and image understanding."
       icon_svg: '<svg class="h-10 w-10 text-cyan-600 dark:text-cyan-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>'
-      
+
     - title: "AI-driven Diagnosis & Health"
       description: "Exploring clinical applications of AI in mental health, nuclear medicine, and computational health solutions."
       icon_svg: '<svg class="h-10 w-10 text-cyan-600 dark:text-cyan-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>'
 
   collaborators_title: "Our Collaborators"
   collaborators:
-    - "shenzhen_uni_log.png"
+    - "shenzhen_uni_logo.png"
     - "shenzhen_cas_logo.png"
     - "zhongshan_uni_logo.png"
     - "ningbo_hospital_logo.png"
     - "shanghai_ruijing_hospital_logo.png"
+    - "ningbo_cpdc_logo.png"
 
   highlights_title: "Lab Highlights"
   highlights:
+    - image: "highlights/MICCAI2026_1stPlace.jpg"
+      caption: "1st Place, MICCAI 2026 MultiBypass Surgical Action Triplet Challenge."
+    - image: "highlights/MICCAI2026_He_Poster.jpg"
+      caption: "Poster presentation by Prof. Xiangjian He at MICCAI 2026."
     - image: "highlights/nottingham_UK_visit_group.jpg"
       caption: "Nottingham, UK Visit Group Photo"
     - image: "highlights/competition_group.jpg"
@@ -67,6 +72,10 @@ about:
 news:
   title: "Lab News"
   items:
+    - date: "Oct. 2026"
+      content: "We achieved 1st place in the <span class='font-bold'>MICCAI 2026 MultiBypass Surgical Action Triplet Challenge</span>! Congrats to the team!"
+    - date: "Sep. 2026"
+      content: "One paper accepted to <span class='font-bold'>Scientific Data (Nature Portfolio)</span>. Congrats to Yue Li!"
     - date: "Jun. 2026"
       content: "Invited to serve as Senior Program Committee of <span class='font-bold'>AAAI 2027</span> in Montréal, Canada."
     - date: "Jun. 2026"
@@ -104,15 +113,15 @@ news:
 
 team:
   title: "Meet the Team"
-  
+
   # --- Director Section ---
   director:
     group_title: "Director"
     name: "Professor Xiangjian He"
-    role: "Lab Director / Chair Professor"
+    role: "Lab Director / Chair Professor / National Talent"
     image: "people/xiangjian_he.jpeg"
     bio_paragraphs:
-      - "Prof. Xiangjian He is the founding director of the CVIP Lab and a chair professor in the School of Computer Science at University of Nottingham Ningbo China. He is a high-level national talent and has been listed among Stanford University and Elsevier's \"World's Top 2% Scientists\"."
+      - 'Prof. Xiangjian He is the founding director of the CVIP Lab and a chair professor in the School of Computer Science at University of Nottingham Ningbo China. He is a high-level national talent and has been listed among Stanford University and Elsevier''s "World''s Top 2% Scientists".'
       - "He has served as Chair for IEEE/ACM conferences including ACM MM, IEEE BigData, and IEEE ICPR. He has published extensively in top-tier conferences and journals, including TPAMI, TMM, TCSVT, CVPR, ICCV, AAAI and MICCAI. He is currently an Associate Editor of IEEE Transactions on Multimedia."
     links:
       - url: "https://research.nottingham.edu.cn/en/persons/xiangjian-he/"
@@ -125,7 +134,7 @@ team:
     - group_name: "Academic Staff"
       members:
         - name: "Jonathan M. Garibaldi"
-          role: "Provost of the UNNC"
+          role: "Provost of the UNNC / Vice-President of Publications in the IEEE Computational Intelligence Society"
           image: "people/jongaribaldi.jpg"
           desc: "Research: Human Decision Making Modeling, Medical Uncertainty & Fuzzy Logic, Intelligent Clinical Systems, Medical Knowledge Representation, Machine Learning (Clustering/Classification/Optimization), Adaptive & Time-Varying Behavior."
           links:
@@ -133,7 +142,7 @@ team:
               icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
 
         - name: "Guoping Qiu"
-          role: "Professor of Visual Information Processing"
+          role: "Chair Professor / Vice Provost for External Relations / Executive Director of the China Beacons Institute"
           image: "people/guoping_qiu.jpg"
           desc: "Research: Visual Information Processing, Computational Photography/Video, HDR Imaging, Example-Based Image Processing, Large Image Database Management, Content-Based Image Indexing/Retrieval, Visual Browsing/Navigation, User Interface/Visualization for Image Repositories."
           links:
@@ -147,7 +156,7 @@ team:
           links:
             - url: "https://research.nottingham.edu.cn/en/persons/anthony-graham-bellotti/"
               icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
-        
+
         - name: "Ying Weng"
           role: "Professor in Computer Science"
           image: "people/ying_weng.jpg"
@@ -155,7 +164,7 @@ team:
           links:
             - url: "https://research.nottingham.edu.cn/en/persons/ying-weng/"
               icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
-        
+
         - name: "Heng Yu"
           role: "Associate Professor in Computer Science"
           image: "people/heng_yu.jpg"
@@ -171,7 +180,7 @@ team:
           links:
             - url: "https://research.nottingham.edu.cn/en/persons/heshan-du/"
               icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
-        
+
         - name: "Jianfeng Ren"
           role: "Associate Professor in Computer Science"
           image: "people/jianfeng_ren.jpg"
@@ -179,7 +188,7 @@ team:
           links:
             - url: "https://research.nottingham.edu.cn/en/persons/jianfeng-ren/"
               icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
-        
+
         - name: "Kian Ming Lim"
           role: "Associate Professor in Computer Science"
           image: "people/kian_ming_lim.jpg"
@@ -187,7 +196,7 @@ team:
           links:
             - url: "https://research.nottingham.edu.cn/en/persons/kian-ming-lim/"
               icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
-        
+
         - name: "Pushpendu Kar"
           role: "Associate Professor in Computer Science"
           image: "people/pushpendu_kar.jpg"
@@ -195,9 +204,17 @@ team:
           links:
             - url: "https://research.nottingham.edu.cn/en/persons/pushpendu-kar/"
               icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
-        
+
+        - name: "Qian Zhang"
+          role: "Associate Professor in Computer Science"
+          image: "people/qian_zhang.jpg"
+          desc: "Research: Computer Vision, Partial-Duplicate Image Discovery, Duplicate Image Detection, Content-Based Image Retrieval, Image Spatial Verification, Pattern Recognition, Large-Scale Image Clustering, Knowledge Discovery in Image Collections."
+          links:
+            - url: "https://research.nottingham.edu.cn/en/persons/qian-zhang/"
+              icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
+
         - name: "Daokun Zhang"
-          role: "Assistant Professor in Computer Science"
+          role: "Assistant Professor in Computer Science / National Talent"
           image: "people/daokun_zhang.jpg"
           desc: "Research: Graph Machine Learning, Graph Representation/Structure Learning, Node Classification, Link Prediction, Weakly Supervised Learning, Uncertainty Quantification, Next-Gen Graph Neural Networks."
           links:
@@ -211,15 +228,7 @@ team:
           links:
             - url: "https://research.nottingham.edu.cn/en/persons/huan-jin/"
               icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
-        
-        - name: "Qian Zhang"
-          role: "Assistant Professor in Computer Science"
-          image: "people/qian_zhang.jpg"
-          desc: "Research: Computer Vision, Partial-Duplicate Image Discovery, Duplicate Image Detection, Content-Based Image Retrieval, Image Spatial Verification, Pattern Recognition, Large-Scale Image Clustering, Knowledge Discovery in Image Collections."
-          links:
-            - url: "https://research.nottingham.edu.cn/en/persons/qian-zhang/"
-              icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
-        
+
         - name: "Yuan Yao"
           role: "Assistant Professor in Computer Science"
           image: "people/yuan_yao.jpg"
@@ -235,15 +244,15 @@ team:
           links:
             - url: "https://research.nottingham.edu.cn/en/persons/zheng-lu/"
               icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
-        
+
         - name: "Qiao Lin"
-          role: "Teaching Fellow in Computer Science"
+          role: "Assistant Professor in Computer Science"
           image: "people/qiao_lin.jpg"
           desc: "Research: Trustworthy AI, Medical Image Segmentation, AI Model Uncertainty, Fuzzy Logic, Large Models."
           links:
             - url: "https://research.nottingham.edu.cn/en/persons/qiao-lin/"
               icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
-        
+
     - group_name: "PhD Students"
       group_subtitle: "Supervised by Prof. Xiangjian He"
       members:
@@ -276,7 +285,7 @@ team:
           previous: "M.S. from The University of Hong Kong"
           desc: "Research: Medical Image Segmentation, Foundation Model"
           links:
-            - url: "https://xq141839.github.io/my-portfolio/"
+            - url: "https://xq141839.github.io/"
               icon_svg: '<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
 
         - name: "Jiaxuan Li"
@@ -354,54 +363,72 @@ team:
           joint: "Joint Ph.D. with Shenzhen Institutes of Advanced Technology, CAS"
           desc: "Research: Medical Image Segmentation"
 
-        - name: "Ruowen Wu"
-          role: "2020 Fall"
-          image: "people/ruowen_wu.jpg"
-          previous: "B.S. from University of Nottingham Ningbo China"
-          desc: "Research: Information Extraction, Knowledge Graph"
+        - name: "Yixuan Zhang"
+          role: "2026 Fall"
+          image: "people/yixuan_zhang.jpg"
+          previous: "B.S. from Hangzhou City University"
+          desc: "Research: Incomplete Annotation Learning"
+
+        - name: "Zhuochen Li"
+          role: "2026 Fall"
+          image: "people/zhuochen_li.jpg"
+          previous: "B.S. from Southwest Forestry University"
+          joint: "Joint Ph.D. with Yongjiang Laboratory"
+          desc: "Research: 3D Reconstruction"
+
+        - name: "Gaoshang Dong"
+          role: "2026 Fall"
+          image: "people/gaoshang_dong.jpg"
+          joint: "Joint Ph.D. with Shenzhen University of Advanced Technology"
+          desc: "Research: Medical Image Analysis"
 
     - group_name: "Master Students"
       group_subtitle: "Supervised by Prof. Xiangjian He"
       members:
-        - name: "Anqi Zhang"
+        - name: "Huining Wang"
           role: "Master Student"
-          image: "people/anqi_zhang.jpg"
-          previous: "B.E. from Nantong University"
-        
-        - name: "Jiayu Zhang"
-          role: "Master Student"
-          image: "people/jiayu_zhang.JPG"
-          previous: "B.S. from Shanghai University of Engineering Science"
+          image: "people/huining_wang.jpg"
+          previous: "B.S. from University of Nottingham Ningbo China"
 
-        - name: "Xiaorui Tian"
+        - name: "Jiali Wang"
           role: "Master Student"
-          image: "people/xiaorui_tian.jpg"
+          image: "people/jiali_wang.jpg"
+          previous: "B.S. from University of Nottingham Ningbo China"
+
+        - name: "Kaiyuan Sun"
+          role: "Master Student"
+          image: "people/kaiyuan_sun.jpg"
+          previous: "B.S. from The University of Nottingham"
+
+        - name: "Liyang Zhang"
+          role: "Master Student"
+          image: "people/liyang_zhang.jpg"
+          previous: "B.S. from Chengdu University of Technology"
+
+        - name: "Siyi Cheng"
+          role: "Master Student"
+          image: "people/siyi_cheng.jpg"
+          previous: "B.S. from Hangzhou Normal University"
+
+        - name: "Xuan Zu"
+          role: "Master Student"
+          image: "people/xuan_zu.jpg"
+          previous: "B.S. from JiLin Police College"
+
+        - name: "Yang Han"
+          role: "Master Student"
+          image: "people/yang_han.jpg"
+          previous: "B.S. from Northeast Agricultural University"
+
+        - name: "Zhe Zhao"
+          role: "Master Student"
+          image: "people/zhe_zhao.jpg"
           previous: "B.S. from Southwest Petroleum University"
 
-        - name: "Yan Huang"
+        - name: "Zhiyang Han"
           role: "Master Student"
-          image: "people/yan_huang.jpg"
-          previous: "B.S. from North China University of Water Resources and Electric Power"
-
-        - name: "Yixuan Zhang"
-          role: "Master Student"
-          image: "people/yixuan_zhang.jpg"
-          previous: "B.S. from Hangzhou City University"
-
-        - name: "Zhuochen Li"
-          role: "Master Student"
-          image: "people/zhuochen_li.jpg"
-          previous: "B.S. from Southwest Forestry University"
-          
-        - name: "Chen Tang"
-          role: "Master Student"
-          image: "people/chen_tang.jpg"
-          previous: "B.S. from Nanjing University of Information Science and Technology"
-
-        - name: "Miao Wang"
-          role: "Master Student"
-          image: "people/miao_wang.jpg"
-          previous: "B.S. from Hubei University of Education"
+          image: "people/zhiyang_han.jpg"
+          previous: "B.S. from Qingdao Agricultural University"
 
     - group_name: "Technical Staff"
       members:
@@ -417,16 +444,13 @@ team:
           role: "Software Engineer"
           image: "people/tao_wu.jpg"
 
-    # - group_name: "Affiliated Faculty"
-    #   members:
-    #     - name: "Dr. Robert Brown"
-    #       role: "Associate Professor"
-    #       image: "https://placehold.co/150x150/1e293b/94a3b8?text=RB"
-    #       desc: "Robotics & Control"
-    #     - name: "Dr. Emily White"
-    #       role: "Assistant Professor"
-    #       image: "https://placehold.co/150x150/1e293b/94a3b8?text=EW"
-    #       desc: "Machine Learning Theory"
+    - group_name: "Alumni"
+      members:
+        - name: "Ruowen Wu"
+          role: "Ph.D. Alumni"
+          image: "people/ruowen_wu.jpg"
+          previous: "B.S. from University of Nottingham Ningbo China"
+          desc: "Research: Information Extraction, Knowledge Graph"
 
 projects:
   title: "Featured Projects"
@@ -456,17 +480,32 @@ publications:
       years:
         - year: 2026
           papers:
+            - title: "Cesarean Scar Defect Segmentation in Transvaginal Ultrasound Images: a Dataset and Benchmark"
+              authors: "Yuan Tian, Yue Li, Wei Xia, Tianyu Xu, Jian Zhang, Liye Shi, Jing Liu, Yang Wang, Ming Liu, Qing Xu, Yixuan Zhang, Maggie M He, <span class='font-bold'>Xiangjian He</span>"
+              venue: "Scientific Data"
+              links:
+                - {
+                    text: "[ PDF ]",
+                    url: "https://www.nature.com/articles/s41597-026-08213-z_reference.pdf",
+                  }
+
             - title: "Generalizable CT-Free PET Attenuation and Scatter Correction via Few-Shot Cross Domain Adaptation"
               authors: "Hanzhong Wang, Meiyuan Wen, Xiaoya Qiao, Qianhao Chen, Yi An, Xin Chen, Ruijie Guo, Qiu Huang, Xiaohua Zhu, Zhaoping Cheng, Jiehua Xu, Hairong Zheng, Dong Liang, <span class='font-bold'>Xiangjian He</span>, Zhanli Hu, Biao Li"
               venue: "npj Digital Medicine"
               links:
-                - { text: "[ PDF ]", url: "https://www.researchgate.net/publication/404880213_Generalizable_CT-free_PET_attenuation_and_scatter_correction_via_few-shot_cross_domain_adaptation" }
+                - {
+                    text: "[ PDF ]",
+                    url: "https://www.researchgate.net/publication/404880213_Generalizable_CT-free_PET_attenuation_and_scatter_correction_via_few-shot_cross_domain_adaptation",
+                  }
 
             - title: "Accurate Segmentation of Surgical Instruments via Spectral-attentive Contextual Interaction Network"
               authors: "Jiaxin Mei, Yizhe Zhang, <span class='font-bold'>Xiangjian He</span>, Tao Zhou"
               venue: "IEEE Journal of Biomedical and Health Informatics (JBHI)"
               links:
-                - { text: "[ PDF ]", url: "https://www.researchgate.net/publication/403465536_Accurate_Segmentation_of_Surgical_Instruments_via_Spectral-Attentive_Contextual_Interaction_Network" }
+                - {
+                    text: "[ PDF ]",
+                    url: "https://www.researchgate.net/publication/403465536_Accurate_Segmentation_of_Surgical_Instruments_via_Spectral-Attentive_Contextual_Interaction_Network",
+                  }
 
             - title: "UniUltra: Interactive Parameter-Efficient SAM2 for Universal Ultrasound Segmentation"
               authors: "Yue Li, Qing Xu, Yixuan Zhang, <span class='font-bold'>Xiangjian He</span>, Qian Zhang, Yuan Yao, Fiseha B. Tesem, Xin Chen, Ruili Wang, Zhen Chen, Chang Wen Chen"
@@ -478,7 +517,10 @@ publications:
               authors: "Yujun Ma, Benjia Zhou, Hong Zhang, Xizheng Zhang, <span class='font-bold'>Xiangjian He</span>, Ruili Wang"
               venue: "IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)"
               links:
-                - { text: "[ PDF ]", url: "https://www.researchgate.net/publication/402635925_Action_Recognition_in_RGB-D_Videos_via_an_End-To-End_Cross-Modal_Attention_Transformer" }
+                - {
+                    text: "[ PDF ]",
+                    url: "https://www.researchgate.net/publication/402635925_Action_Recognition_in_RGB-D_Videos_via_an_End-To-End_Cross-Modal_Attention_Transformer",
+                  }
 
             - title: "SP-Det: Self-Prompted Dual-Text Fusion for Generalized Multi-Label Lesion Detection"
               authors: "Qing Xu, Yanqian Wang, <span class='font-bold'>Xiangjian He</span>, Yue Li, Yixuan Zhang, Rong Qu, Wenting Duan, Zhen Chen"
@@ -490,19 +532,28 @@ publications:
               authors: "Jingxi Hu, Lianghua Li, Qiyang Zhang, Weijun Wei, Gang Huang, Jianjun Liu, Dong Liang, Hairong Zheng, Zhanli Hu, <span class='font-bold'>Xiangjian He</span>, Na Zhang"
               venue: "Medical Physics"
               links:
-                - { text: "[ PDF ]", url: "https://pubmed.ncbi.nlm.nih.gov/41761600/" }
+                - {
+                    text: "[ PDF ]",
+                    url: "https://pubmed.ncbi.nlm.nih.gov/41761600/",
+                  }
 
             - title: "UDG-Prom: A Unified Dense-Guided Semantic Prompting for Cross-Domain Few-Shot Image Segmentation"
               authors: "Jiaqi Yang, <span class='font-bold'>Xiangjian He</span>, Xin CHen, Yaning Zhang, Jingxi Hu, Linlin Shen, Guoping Qiu"
               venue: "Knowledge-Based Systems (KBS)"
               links:
-                - { text: "[ PDF ]", url: "https://www.researchgate.net/publication/399157805_UDG-Prom_A_Unified_Dense-Guided_Semantic_Prompting_for_Cross-Domain_Few-Shot_Image_Segmentation" }
+                - {
+                    text: "[ PDF ]",
+                    url: "https://www.researchgate.net/publication/399157805_UDG-Prom_A_Unified_Dense-Guided_Semantic_Prompting_for_Cross-Domain_Few-Shot_Image_Segmentation",
+                  }
 
             - title: "Reliable-Teacher: Uncertainty-Guided Collaborative Learning for Nighttime Object Detection"
               authors: "Heng Luo, Yue Xi, Wenjing Jia, Jiaqi Xiao, Jinchang Ren, Di Yuan, Qiguang Miao, <span class='font-bold'>Xiangjian He</span>"
               venue: "IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)"
               links:
-                - { text: "[ PDF ]", url: "https://ieeexplore.ieee.org/abstract/document/11398391" }
+                - {
+                    text: "[ PDF ]",
+                    url: "https://ieeexplore.ieee.org/abstract/document/11398391",
+                  }
         - year: 2025
           papers:
             - title: "De-LightSAM: Modality-Decoupled Lightweight SAM for Generalizable Medical Segmentation"
@@ -510,52 +561,76 @@ publications:
               venue: "IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), IF:11.1, CAS Q1"
               links:
                 - { text: "[ PDF ]", url: "#https://arxiv.org/abs/2407.14153" }
-                
+
             - title: "HFA-UNet: Hybrid and Full Attention UNet for Thyroid Nodule Segmentation"
               authors: "Yue Li, Yuanhao Zou, <span class='font-bold'>Xiangjian He</span>, Qing Xu, Ming Liu, Shengji Jin, Qian Zhang, Maggie M. He, Jian Zhang"
               venue: "Knowledge-Based Systems (KBS), IF:7.6, CAS Q1"
               links:
-                - { text: "[ PDF ]", url: "#https://doi.org/10.1016/j.knosys.2025.114245" }
+                - {
+                    text: "[ PDF ]",
+                    url: "#https://doi.org/10.1016/j.knosys.2025.114245",
+                  }
 
             - title: "MambaVesselNet++: A Hybrid CNN-Mamba Architecture for Medical Image Segmentation"
               authors: "Qing Xu, Yanming Chen, Yue Li, Ziyu Liu, Zhenye Lou, Yixuan Zhang, Huizhong Zheng, <span class='font-bold'>Xiangjian He</span>"
               venue: "ACM Transactions on Multimedia Computing, Communications and Applications (TOMM)"
               links:
-                 - { text: "[ PDF ]", url: "#https://www.researchgate.net/publication/394996910_MambaVesselNet_A_Hybrid_CNN-Mamba_Architecture_for_Medical_Image_Segmentation" }
-            
+                - {
+                    text: "[ PDF ]",
+                    url: "#https://www.researchgate.net/publication/394996910_MambaVesselNet_A_Hybrid_CNN-Mamba_Architecture_for_Medical_Image_Segmentation",
+                  }
+
             - title: "NuSegDG: Integration of Heterogeneous Space and Gaussian Kernel for Domain-Generalized Nuclei Segmentation"
               authors: "Zhenye Lou, Qing Xu, Zekun Jiang, <span class='font-bold'>Xiangjian He</span>, Chenxin Li, Zhen Chen, Yi Wang, Maggie M. He, Wenting Duan"
               venue: "Knowledge-Based Systems (KBS)"
               links:
-                 - { text: "[ PDF ]", url: "#https://arxiv.org/pdf/2408.11787" }
+                - { text: "[ PDF ]", url: "#https://arxiv.org/pdf/2408.11787" }
 
             - title: "Diffusion-Based Model for Parametric Ki Generation From Total-Body Dynamic PET of Short-Duration Scan"
               authors: "Meiyuan Wen, Yaping Wu, Zhenxing Huang, <span class='font-bold'>Xiangjian He</span>, Fiseha B. Tesema, Zixiang Chen, Yunlong Gao, Wenbo Li, Xinlan Yang, Yongfeng Yang, Hairong Zheng, Dong Liang, Meiyun Wang, Zhanli Hu"
               venue: "IEEE Transactions on Radiation and Plasma Medical Sciences (TRPMS)"
               links:
-                 - { text: "[ PDF ]", url: "#https://ieeexplore.ieee.org/abstract/document/10982123" }
-            
+                - {
+                    text: "[ PDF ]",
+                    url: "#https://ieeexplore.ieee.org/abstract/document/10982123",
+                  }
+
             - title: "Depression Diagnosis Through Emotional Induction and Physiological Signals: A Systematic Review"
               authors: "Jing Liu, <span class='font-bold'>Xiangjian He</span>, Xu Sun, David Jo"
               venue: "Neuroscience & Biobehavioral Reviews"
               links:
-                 - { text: "[ PDF ]", url: "#https://pubmed.ncbi.nlm.nih.gov/40602453" }
+                - {
+                    text: "[ PDF ]",
+                    url: "#https://pubmed.ncbi.nlm.nih.gov/40602453",
+                  }
 
             - title: "CFFormer: Cross CNN-Transformer Channel Attention and Spatial Feature Fusion for Improved Segmentation"
               authors: "Jiaxuan Li, Qing Xu, <span class='font-bold'>Xiangjian He</span>, Ziyu Liu, Daokun Zhang, Ruili Wang, Rong Qu, Guoping Qiu"
               venue: "Expert Systems with Applications (ESWA)"
               links:
-                 - { text: "[ PDF ]", url: "#https://www.researchgate.net/publication/393283661_CFFormer_Cross_CNN-Transformer_Channel_Attention_and_Spatial_Feature_Fusion_for_Improved_Segmentation_of_Heterogeneous_Medical_Images" }
+                - {
+                    text: "[ PDF ]",
+                    url: "#https://www.researchgate.net/publication/393283661_CFFormer_Cross_CNN-Transformer_Channel_Attention_and_Spatial_Feature_Fusion_for_Improved_Segmentation_of_Heterogeneous_Medical_Images",
+                  }
 
     - name: "Conference Papers"
       years:
         - year: 2026
           papers:
+            - title: "Rethinking the Adaptation of Vision Foundation Models for Efficient Cell Segmentation"
+              authors: "Qing Xu, <span class='font-bold'>Xiangjian He</span>, Wenting Duan, Jiebo Luo, Zhen Chen"
+              venue: "arXiv preprint arXiv:2606.21913"
+              links:
+                - { text: "[ PDF ]", url: "https://arxiv.org/pdf/2606.21913" }
+
             - title: "Towards Universal Ultrasound Analysis: Parameter-Efficient Foundation Model With Task-Aware Routing for Heterogeneous Multi-Task Learning"
               authors: "Yixuan Zhang, Qing Xu, Yue Li, <span class='font-bold'>Xiangjian He</span>, Zhen Chen"
               venue: "ISBI 2026"
               links:
-                - { text: "[ PDF ]", url: "https://www.researchgate.net/publication/405085513_Towards_Universal_Ultrasound_Analysis_Parameter-Efficient_Foundation_Model_With_Task-Aware_Routing_for_Heterogeneous_Multi-Task_Learning" }
+                - {
+                    text: "[ PDF ]",
+                    url: "https://www.researchgate.net/publication/405085513_Towards_Universal_Ultrasound_Analysis_Parameter-Efficient_Foundation_Model_With_Task-Aware_Routing_for_Heterogeneous_Multi-Task_Learning",
+                  }
 
             - title: "FreqDINO: Frequency-Guided Adaptation for Generalized Boundary-Aware Ultrasound Image Segmentation"
               authors: "Yixuan Zhang, Qing Xu, Yue Li, <span class='font-bold'>Xiangjian He</span>, Qian Zhang, Mainul Haque, Rong Qu, Wenting Duan, Zhen Chen"
@@ -573,26 +648,38 @@ publications:
               authors: "Long Ma, Haoze Zheng, Yuhang Mao, Jinyuan Liu, Chengpei Xu, Xinwei Xue, Yi Wang, <span class='font-bold'>Xiangjian He</span>, Weimin Wang"
               venue: "CVPR 2026"
               links:
-                - { text: "[ PDF ]", url: "https://openaccess.thecvf.com/content/CVPR2026/papers/Ma_BiPA_Bilevel_Prompt_Adaptation_for_Underwater_Instance_Segmentation_CVPR_2026_paper.pdf" }
+                - {
+                    text: "[ PDF ]",
+                    url: "https://openaccess.thecvf.com/content/CVPR2026/papers/Ma_BiPA_Bilevel_Prompt_Adaptation_for_Underwater_Instance_Segmentation_CVPR_2026_paper.pdf",
+                  }
 
             - title: "H2-Surv: Hierarchical Hyperbolic Multimodal Representation Learning for Survival Prediction"
               authors: "Jiaqi Yang, Wenting Chen, <span class='font-bold'>Xiangjian He</span>, Yuanbai Li, Sen Yang, Linin Shen, Xiaohan Xing"
               venue: "CVPR 2026"
               links:
-                - { text: "[ PDF ]", url: "https://openaccess.thecvf.com/content/CVPR2026/papers/Yang_H2-Surv_Hierarchical_Hyperbolic_Multimodal_Representation_Learning_for_Survival_Prediction_CVPR_2026_paper.pdf" }
+                - {
+                    text: "[ PDF ]",
+                    url: "https://openaccess.thecvf.com/content/CVPR2026/papers/Yang_H2-Surv_Hierarchical_Hyperbolic_Multimodal_Representation_Learning_for_Survival_Prediction_CVPR_2026_paper.pdf",
+                  }
 
             - title: "Localizing, Structuring, and Rendering: Bridging 3D and 2D Vision-Language-Action Models for Robotic Manipulation"
               authors: "Yunlong Zhao, Xiaoheng Deng, Yichao Cao, Yi Chen, <span class='font-bold'>Xiangjian He</span>, Shan You, Shuo Yang, Lei Fan, Fei Wang, Xiu Su"
               venue: "CVPR 2026"
               links:
-                - { text: "[ PDF ]", url: "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhao_Localizing_Structuring_and_Rendering_Bridging_3D_and_2D_Vision-Language-Action_Models_CVPR_2026_paper.pdf" }
+                - {
+                    text: "[ PDF ]",
+                    url: "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhao_Localizing_Structuring_and_Rendering_Bridging_3D_and_2D_Vision-Language-Action_Models_CVPR_2026_paper.pdf",
+                  }
         - year: 2025
           papers:
             - title: "WSI-Agents: A Collaborative Multi-Agent System for Multi-Modal Whole Slide Image Analysis"
               authors: "Xinheng Lyu, Yuci Liang, Wenting Chen, Meidan Ding, Jiaqi Yang, Guolin Huang, Daokun Zhang, <span class='font-bold'>Xiangjian He</span>, Linlin Shen"
               venue: "MICCAI 2025 (Oral)"
               links:
-                - { text: "[ PDF ]", url: "#https://papers.miccai.org/miccai-2025/paper/0994_paper.pdf" }
+                - {
+                    text: "[ PDF ]",
+                    url: "#https://papers.miccai.org/miccai-2025/paper/0994_paper.pdf",
+                  }
 
             - title: "WSI-LLAVA: a multimodal large language model for whole slide image"
               authors: "Yuci Liang, Xinheng Lyu, Wenting Chen, Meidan Ding, Jipeng Zhang, <span class='font-bold'>Xiangjian He</span>, Song Wu, Xiaohan Xing, Sen Yang, Xiyue Wang, Linlin Shen"
@@ -604,11 +691,32 @@ publications:
               authors: "Ziyu Liu, Jiaxuan Li, <span class='font-bold'>Xiangjian He</span>, Qing Xu, Xin Chen, Shoujun Zhou"
               venue: "ICASSP 2025"
               links:
-                - { text: "[ PDF ]", url: "#https://www.researchgate.net/publication/390538373_Swin-VasMamba_A_Topologically_Constrained_Model_For_3D_Vascular_Segmentation" }
+                - {
+                    text: "[ PDF ]",
+                    url: "#https://www.researchgate.net/publication/390538373_Swin-VasMamba_A_Topologically_Constrained_Model_For_3D_Vascular_Segmentation",
+                  }
 
 awards:
   title: "Awards"
   items:
+    - title: "Best Poster Award, MICCAI 2026 MWM Workshop"
+      description: "This Best Poster Award was presented at the Medical World Models (MWM) Workshop at MICCAI 2026 for research on Mitral Valve Anatomy Analysis using Multimodal Data."
+      recipient: "Liyang Zhang, Qing Xu, Xiangjian He"
+      date: "Oct 2026"
+      image: "award/SKM_C30826100611181.jpg"
+
+    - title: "Overall Fourth Place, MICCAI 2026 Foundation Model Challenge For Ultrasound Biometry"
+      description: "The team 'NPM' was awarded Overall Fourth Place in the Foundation Model Challenge For Ultrasound Biometry at the 29th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI 2026)."
+      recipient: "Yixuan Zhang, Qing Xu, Yue Li, Xiangjian He, Zhen Chen"
+      date: "Oct 2026"
+      image: "award/SKM_C30826100611170.jpg"
+
+    - title: "First Place, MICCAI 2026 MultiBypass Surgical Action Triplet Challenge"
+      description: "The team 'Surg Trip' was awarded First Place in the MultiBypass Surgical Action Triplet Challenge at MICCAI 2026."
+      recipient: "Xinru Bai, Qing Xu, Yuxiang Luo, Xiangjian He, Zhen Chen"
+      date: "Sep 2026"
+      image: "award/SKM_C30826100611180.jpg"
+
     - title: "Invention Patent: 一种医学影像的分割方法、系统及装置"
       description: "A Medical Image Segmentation Method, System, and Apparatus."
       recipient: "Xiangjian He, Yue Li, Qing Xu, Yixuan Zhang"
@@ -626,7 +734,7 @@ awards:
       recipient: "Xiangjian He, Jiaxuan Li, Qing Xu"
       date: "Dec 2025"
       image: "award/证书.jpg"
-      
+
     - title: "Fast and Flexible Interactive Medical Image Segmentation System"
       description: "The Efficient Medical Image Annotation System represents a novel integration of advanced machine learning models with an intuitive web-based interface for streamlined medical image analysis and annotation."
       recipient: "Xiangjian He, Tao Wu, Qing Xu, Yuhan Sun, Jiawei Zhou, Yuanbai Li, Yipeng Xu, Liming Ding, Zehao Li"
@@ -640,7 +748,7 @@ contact:
     - title: "Address"
       icon_svg: '<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>'
       content_html: "Trent 205, Trent Building, University of Nottingham Ningbo China<br>199 Taikang E Rd, Yinzhou, Ningbo, Zhejiang, China, 315104"
-      
+
     - title: "Email"
       icon_svg: '<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>'
       content_html: "To Prof. Xiangjian He: <a href='mailto:sean.he@nottingham.edu.cn' class='text-cyan-600 hover:underline'>sean.he@nottingham.edu.cn</a>"

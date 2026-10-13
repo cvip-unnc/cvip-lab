@@ -1,0 +1,50 @@
+# ==========================================
+# CVIP Lab Website Content Configuration
+# Edit this file to update website text/images
+# ==========================================
+
+team:
+  groups:
+    - group_name: "Master Students"
+      group_subtitle: "Supervised by Prof. Xiangjian He"
+      members:
+        - name: "Anqi Zhang"
+          role: "Master Student"
+          image: "people/anqi_zhang.jpg"
+          previous: "B.E. from Nantong University"
+
+        - name: "Jiayu Zhang"
+          role: "Master Student"
+          image: "people/jiayu_zhang.JPG"
+          previous: "B.S. from Shanghai University of Engineering Science"
+
+        - name: "Xiaorui Tian"
+          role: "Master Student"
+          image: "people/xiaorui_tian.jpg"
+          previous: "B.S. from Southwest Petroleum University"
+
+        - name: "Yan Huang"
+          role: "Master Student"
+          image: "people/yan_huang.jpg"
+          previous: "B.S. from North China University of Water Resources and Electric Power"
+
+        - name: "Chen Tang"
+          role: "Master Student"
+          image: "people/chen_tang.jpg"
+          previous: "B.S. from Nanjing University of Information Science and Technology"
+
+        - name: "Miao Wang"
+          role: "Master Student"
+          image: "people/miao_wang.jpg"
+          previous: "B.S. from Hubei University of Education"
+
+    - group_name: "Affiliated Faculty"
+      members:
+        - name: "Dr. Robert Brown"
+          role: "Associate Professor"
+          image: "https://placehold.co/150x150/1e293b/94a3b8?text=RB"
+          desc: "Robotics & Control"
+        - name: "Dr. Emily White"
+          role: "Assistant Professor"
+          image: "https://placehold.co/150x150/1e293b/94a3b8?text=EW"
+          desc: "Machine Learning Theory"
